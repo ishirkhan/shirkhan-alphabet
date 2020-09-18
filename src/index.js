@@ -86,7 +86,15 @@ export const uighur2shirkhan = (word) => {
     .map((letter) => (u2sMap.hasOwnProperty(letter) ? u2sMap[letter] : letter));
 };
 
-const target_content = "فېڭ";
-const shirkhan = uighur2shirkhan(target_content);
-console.warn(target_content);
-console.error(shirkhan.join(""));
+export const shirkhan2uighur = (word) => {
+  return [...word].map((letter) =>
+    s2uMap.hasOwnProperty(letter) ? s2uMap[letter] : letter
+  );
+};
+
+const target_content = "ياخشىمۇ سىز دوستۇم";
+const shir = uighur2shirkhan(target_content);
+const ui = shirkhan2uighur(shir);
+
+console.log("shir", shir.join(""));
+console.log("ui", ui.join(""));
