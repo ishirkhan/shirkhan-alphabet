@@ -81,9 +81,9 @@ const s2uMap = {
 };
 
 export const uighur2shirkhan = (word) => {
-  return [...word]
-    .filter((item) => item !== "ئ")
-    .map((letter) => (u2sMap.hasOwnProperty(letter) ? u2sMap[letter] : letter));
+  return [...word].map((letter) =>
+    u2sMap.hasOwnProperty(letter) ? u2sMap[letter] : letter
+  );
 };
 
 export const shirkhan2uighur = (word) => {
@@ -92,7 +92,8 @@ export const shirkhan2uighur = (word) => {
   );
 };
 
-const target_content = "ياخشىمۇ سىز دوستۇم";
+const target_content =
+  "，ياخشىمۇ سىز دوستۇم سىزنىڭ خىزمەت دائىرىڭىزنى سورىسەم بۇلامدۇ رەئىس";
 const shir = uighur2shirkhan(target_content);
 const ui = shirkhan2uighur(shir);
 
