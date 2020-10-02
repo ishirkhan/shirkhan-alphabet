@@ -3,7 +3,7 @@ const uighurAlphabet =
 
 //sozuq 8 jarangliq 24  jarangsiz
 const u2sMap = {
-  ئ: "^",
+  ئ: "ic",
 
   ا: "a",
   ە: "e",
@@ -42,7 +42,7 @@ const u2sMap = {
 };
 
 const s2uMap = {
-  "^": "ئ",
+  "ic": "ئ",
 
   a: "ا",
   e: "ە",
