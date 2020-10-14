@@ -42,7 +42,7 @@ const u2sMap = {
 };
 
 const s2uMap = {
-  ic: "ئ",
+  ii: "ئ",
 
   a: "ا",
   e: "ە",
