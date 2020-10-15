@@ -1,101 +1,105 @@
-const uighurAlphabet =
-  "ئا ئە ئې ئى ئو ئۇ ئۆ ئۈ ب د گ ج ل  م ن ر ۋ ي ز غ ژ ڭ ھ  پ ت چ س خ ش ف ق ك";
+import Alphabet from "./alphabet";
 
-//sozuq 8 jarangliq 24  jarangsiz
-const u2sMap = {
-  ئ: "ii",
+const alphabet = new Alphabet();
 
-  ا: "a",
-  ە: "e",
-  ې: "ei",
-  ى: "i",
-  و: "o",
-  ۇ: "u",
-  ۆ: "ov",
-  ۈ: "oi",
+// const uighurAlphabet =
+//   "ئا ئە ئې ئى ئو ئۇ ئۆ ئۈ ب د گ ج ل  م ن ر ۋ ي ز غ ژ ڭ ھ  پ ت چ س خ ش ف ق ك";
 
-  ب: "b",
-  د: "d",
-  گ: "g",
-  ج: "j",
-  ل: "l",
-  م: "m",
-  ن: "n",
-  ر: "r",
-  ۋ: "w",
-  ي: "y",
-  ز: "z",
-  غ: "gh",
-  ژ: "rh",
-  ڭ: "ng",
-  ھ: "h",
+// //sozuq 8 jarangliq 24  jarangsiz
+// const u2sMap = {
+//   ئ: "ii",
 
-  پ: "p",
-  ت: "t",
-  چ: "ch",
-  س: "s",
-  خ: "kh",
-  ش: "x",
-  ف: "f",
-  ق: "q",
-  ك: "k",
-};
+//   ا: "a",
+//   ە: "e",
+//   ې: "ei",
+//   ى: "i",
+//   و: "o",
+//   ۇ: "u",
+//   ۆ: "ov",
+//   ۈ: "oi",
 
-const s2uMap = {
-  ii: "ئ",
+//   ب: "b",
+//   د: "d",
+//   گ: "g",
+//   ج: "j",
+//   ل: "l",
+//   م: "m",
+//   ن: "n",
+//   ر: "r",
+//   ۋ: "w",
+//   ي: "y",
+//   ز: "z",
+//   غ: "gh",
+//   ژ: "rh",
+//   ڭ: "ng",
+//   ھ: "h",
 
-  a: "ا",
-  e: "ە",
-  ei: "ې",
-  i: "ى",
-  o: "و",
-  u: "ۇ",
-  ov: "ۆ",
-  oi: "ۈ",
+//   پ: "p",
+//   ت: "t",
+//   چ: "ch",
+//   س: "s",
+//   خ: "kh",
+//   ش: "x",
+//   ف: "f",
+//   ق: "q",
+//   ك: "k",
+// };
 
-  b: "ب",
-  d: "د",
-  g: "گ",
-  j: "ج",
-  l: "ل",
-  m: "م",
-  n: "ن",
-  r: "ر",
-  w: "ۋ",
-  y: "ي",
-  z: "ز",
-  gh: "غ",
-  rh: "ژ",
-  ng: "ڭ",
-  h: "ھ",
+// const s2uMap = {
+//   ii: "ئ",
 
-  p: "پ",
-  t: "ت",
-  ch: "چ",
-  s: "س",
-  kh: "خ",
-  x: "ش",
-  f: "ف",
-  q: "ق",
-  k: "ك",
-};
+//   a: "ا",
+//   e: "ە",
+//   ei: "ې",
+//   i: "ى",
+//   o: "و",
+//   u: "ۇ",
+//   ov: "ۆ",
+//   oi: "ۈ",
 
-export const uighur2shirkhan = (word) => {
-  return [...word].map((letter) =>
-    u2sMap.hasOwnProperty(letter) ? u2sMap[letter] : letter
-  );
-};
+//   b: "ب",
+//   d: "د",
+//   g: "گ",
+//   j: "ج",
+//   l: "ل",
+//   m: "م",
+//   n: "ن",
+//   r: "ر",
+//   w: "ۋ",
+//   y: "ي",
+//   z: "ز",
+//   gh: "غ",
+//   rh: "ژ",
+//   ng: "ڭ",
+//   h: "ھ",
 
-export const shirkhan2uighur = (word) => {
-  return [...word].map((letter) =>
-    s2uMap.hasOwnProperty(letter) ? s2uMap[letter] : letter
-  );
-};
+//   p: "پ",
+//   t: "ت",
+//   ch: "چ",
+//   s: "س",
+//   kh: "خ",
+//   x: "ش",
+//   f: "ف",
+//   q: "ق",
+//   k: "ك",
+// };
 
-const target_content =
-  "，ياخشىمۇ سىز دوستۇم سىزنىڭ خىزمەت دائىرىڭىزنى سورىسەم بۇلامدۇ رەئىس";
-const shir = uighur2shirkhan(target_content);
-const ui = shirkhan2uighur(shir);
+// export const uighur2shirkhan = (word) => {
+//   return [...word].map((letter) =>
+//     u2sMap.hasOwnProperty(letter) ? u2sMap[letter] : letter
+//   );
+// };
 
-console.log("shir", shir.join(""));
-console.log("ui", ui.join(""));
+// export const shirkhan2uighur = (word) => {
+//   return [...word].map((letter) =>
+//     s2uMap.hasOwnProperty(letter) ? s2uMap[letter] : letter
+//   );
+// };
+
+// const target_content =
+//   "，ياخشىمۇ سىز دوستۇم سىزنىڭ خىزمەت دائىرىڭىزنى سورىسەم بۇلامدۇ رەئىس";
+// const shir = uighur2shirkhan(target_content);
+// const ui = shirkhan2uighur(shir);
+
+// console.log("shir", shir.join(""));
+// console.log("ui", ui.join(""));
