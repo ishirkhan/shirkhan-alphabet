@@ -51,6 +51,16 @@ export default class Alphabet {
         new Letter(shirkhanChar, uighurChar, (isSozuq && true) || false)
       );
     });
-    console.log(this.letters);
+  }
+
+  /**
+   *
+   * @param {string} char
+   * @returns {Letter | undefined}
+   */
+  getLetter(char) {
+    return this.letters.find(
+      (item) => item.uighurChar === char || item.shirkhanChar === char
+    );
   }
 }
