@@ -52,9 +52,15 @@ const InputHandler = (target = document.getElementById("root")) => {
     }
 
     if (alphabet.isAPair(preChar, pressedChar)) {
-      let deleteCharCount = alphabet.ifHemze(preChar, "") ? 2 : 1; //如果前一个字母是sozuq 并且前面是空字符是因自动增加的hemze,需要多减去hemze
-      target.value = target.value.slice(0, cursorPos - deleteCharCount);
-      updateInputValue(alphabet.getPairing(preChar, pressedChar).uighurChar);
+      let deleteCharCount =
+        getPreChar(target.value, cursorPos - 1) ===
+        alphabet.getHemze().uighurChar
+          ? 2
+          : 1; //如果前一个字母是sozuq 并且前面是空字符是因自动增加的hemze,需要多减去hemze
+
+      target.value =
+        target.value.slice(0, cursorPos - deleteCharCount) +
+        alphabet.getPairing(preChar, pressedChar).uighurChar;
       return;
     }
 
