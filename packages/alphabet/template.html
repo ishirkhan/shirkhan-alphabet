@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        [dir="rtl"] {
+            font-family: "shirkhan";
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="root">
         <h1> input handle demo</h1>
-        <input type="text" name="editor" id="editor">
+        <textarea name="editor" id="editor" cols="30" rows="10" placeholder="请你输入你的内容...."></textarea>
     </div>
+
+    <script>
+        const font = new FontFace("shirkhan", `url("https://crx.learnfans.com/fonts/UKIJTuzKitab_Regular/UKIJTuzKitab_Regular.woff2")`)
+        font.load()
+        document.fonts.add(font)
+    </script>
 </body>
 
 </html>

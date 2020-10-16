@@ -11,7 +11,7 @@ export default class Alphabet {
     ["ii", "ئ", 1, 0],
     ["a", "ا", 1, 0],
     ["e", "ە", 1, 0],
-    ["ei", "ې", 1, 0],
+    ["ie", "ې", 1, 0],
     ["i", "ى", 1, 1],
     ["o", "و", 1, 0],
     ["u", "ۇ", 1, 0],
@@ -74,7 +74,10 @@ export default class Alphabet {
    * @returns {string}
    */
   withHemze(targetChar) {
-    return this.getHemze().shirkhanChar + targetChar;
+    if (!this.isValidChar(targetChar))
+      throw new Error(`'${targetChar}'  不是合法字符`);
+
+    return this.getHemze().uighurChar + this.getLetter(targetChar).uighurChar;
   }
 
   /**
@@ -107,7 +110,29 @@ export default class Alphabet {
    * @returns {boolean}
    */
   isAPair(charFist, charSecond) {
-    return typeof this.getLetter(charFist + charSecond) !== "undefined";
+    return (
+      this.isValidChar(charFist) &&
+      this.isValidChar(charSecond) &&
+      typeof this.getLetter(
+        this.getLetter(charFist).shirkhanChar +
+          this.getLetter(charSecond).shirkhanChar
+      ) !== "undefined"
+    );
+  }
+
+  /**
+   * 给可以组合两个字符生成对应的新字符
+   * @param {string} charFist
+   * @param {string} charSecond
+   * @returns {Letter}
+   */
+  getPairing(charFist, charSecond) {
+    if (!this.isAPair(charFist, charSecond)) return undefined;
+
+    return this.getLetter(
+      this.getLetter(charFist).shirkhanChar +
+        this.getLetter(charSecond).shirkhanChar
+    );
   }
 
   /**
