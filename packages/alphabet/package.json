@@ -15,6 +15,8 @@
   "devDependencies": {
     "@neutrinojs/library": "^9.4.0",
     "@neutrinojs/web": "^9.4.0",
+    "@types/jquery": "^3.5.3",
+    "jquery": "^3.5.1",
     "neutrino": "^9.4.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",

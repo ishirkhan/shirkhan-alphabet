@@ -1,4 +1,3 @@
-import Alphabet from "./alphabet";
+import InputHandler from "./inputHandler";
 
-const alphabet = new Alphabet();
-const letter = alphabet.getLetter("?");
+InputHandler(document.getElementById("editor"));
