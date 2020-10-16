@@ -62,6 +62,55 @@ export default class Alphabet {
   }
 
   /**
+   *@returns {Letter}
+   */
+  getHemze() {
+    return this.getLetter("ii");
+  }
+
+  /**
+   * 给定字符补充hemze
+   * @param {string} targetChar ascii 值
+   * @returns {string}
+   */
+  withHemze(targetChar) {
+    return this.getHemze().shirkhanChar + targetChar;
+  }
+
+  /**
+   * 通过prechar 判断当前字符是否需要补充hemze
+   * @param {string} targetChar
+   * @param {string} preChar
+   * @returns {boolean}
+   */
+  ifHemze(targetChar, preChar) {
+    return (
+      preChar.trim().length === 0 &&
+      this.isValidChar(targetChar) &&
+      this.getLetter(targetChar).isSozuq
+    );
+  }
+
+  /**
+   * 是否属于字母表的字符
+   * @param {string} char any
+   * @returns {boolean}
+   */
+  isValidChar(char) {
+    return typeof this.getLetter(char) !== "undefined";
+  }
+
+  /**
+   *判断给定的两个字符是否是一对儿(能否组合生成新字符)
+   * @param {string} charFist any
+   * @param {string} charSecond any
+   * @returns {boolean}
+   */
+  isAPair(charFist, charSecond) {
+    return typeof this.getLetter(charFist + charSecond) !== "undefined";
+  }
+
+  /**
    *
    * @param {string} char
    * @returns {Letter | undefined}
