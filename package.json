@@ -1,23 +1,15 @@
 {
   "name": "shirkhan-alphabet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "build/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --config webpack.web.config.js --open",
-    "build": "webpack --mode production"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "module": "src/index.js",
+  "version": "0.0.1",
+  "repository": "https://gitee.com/silvaq/shirkhan-alphabet.git",
+  "author": "babbage <601728820@qq.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@neutrinojs/library": "^9.4.0",
-    "@neutrinojs/web": "^9.4.0",
-    "neutrino": "^9.4.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "lerna": "^3.22.1"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "gitTagVersion": false,
+      "push": false
+    },
+    "publish": {
+      "gitTagVersion": false,
+      "push": false
+    }
+  },
+  "packages": ["packages/*"]
+}
