@@ -117,3 +117,4 @@ dist
 
 # Neutrino build directory
 build
+types

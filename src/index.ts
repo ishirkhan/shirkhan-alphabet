@@ -1,4 +1,8 @@
 import Letter from "./letter";
+
+type IMapItem = [string, string, number, number]
+
+//TODO -- 本类中多次使用了 非空断言 ！ 需要其他方式优化，调整逻辑
 export default class Alphabet {
   /**
    * shirkhan 和uighur 字母映射表
@@ -7,7 +11,8 @@ export default class Alphabet {
    * arr[2] is Sozuq
    * arr[3] is special  //需要考虑组合字母的特殊字母
    */
-  static s2uMap = [
+
+  static s2uMap: Array<IMapItem> = [
     ["ii", "ئ", 1, 0],
     ["a", "ا", 1, 0],
     ["e", "ە", 1, 0],
@@ -44,7 +49,7 @@ export default class Alphabet {
   ];
 
   // Letter类的实例集
-  letters = [];
+  letters: Array<Letter> = []
 
   constructor() {
     Alphabet.s2uMap.forEach(
@@ -61,11 +66,9 @@ export default class Alphabet {
     );
   }
 
-  /**
-   *@returns {Letter}
-   */
+
   getHemze() {
-    return this.getLetter("ii");
+    return this.getLetter("ii")!;
   }
 
   /**
@@ -73,11 +76,11 @@ export default class Alphabet {
    * @param {string} targetChar ascii 值
    * @returns {string}
    */
-  withHemze(targetChar) {
+  withHemze(targetChar: string) {
     if (!this.isValidChar(targetChar))
       throw new Error(`'${targetChar}'  不是合法字符`);
 
-    return this.getHemze().uighurChar + this.getLetter(targetChar).uighurChar;
+    return this.getHemze().uighurChar + this.getLetter(targetChar)!.uighurChar;
   }
 
   /**
@@ -86,11 +89,11 @@ export default class Alphabet {
    * @param {string} preChar
    * @returns {boolean}
    */
-  ifHemze(targetChar, preChar) {
+  ifHemze(targetChar: string, preChar: string) {
     return (
       preChar.trim().length === 0 &&
       this.isValidChar(targetChar) &&
-      this.getLetter(targetChar).isSozuq
+      this.getLetter(targetChar)!.isSozuq
     );
   }
 
@@ -99,7 +102,7 @@ export default class Alphabet {
    * @param {string} char any
    * @returns {boolean}
    */
-  isValidChar(char) {
+  isValidChar(char: string) {
     return typeof this.getLetter(char) !== "undefined";
   }
 
@@ -109,13 +112,13 @@ export default class Alphabet {
    * @param {string} charSecond any
    * @returns {boolean}
    */
-  isAPair(charFist, charSecond) {
+  isAPair(charFist: string, charSecond: string) {
     return (
       this.isValidChar(charFist) &&
       this.isValidChar(charSecond) &&
       typeof this.getLetter(
-        this.getLetter(charFist).shirkhanChar +
-          this.getLetter(charSecond).shirkhanChar
+        this.getLetter(charFist)!.shirkhanChar +
+        this.getLetter(charSecond)!.shirkhanChar
       ) !== "undefined"
     );
   }
@@ -126,12 +129,12 @@ export default class Alphabet {
    * @param {string} charSecond
    * @returns {Letter}
    */
-  getPairing(charFist, charSecond) {
+  getPairing(charFist: string, charSecond: string) {
     if (!this.isAPair(charFist, charSecond)) return undefined;
 
     return this.getLetter(
-      this.getLetter(charFist).shirkhanChar +
-        this.getLetter(charSecond).shirkhanChar
+      this.getLetter(charFist)!.shirkhanChar +
+      this.getLetter(charSecond)!.shirkhanChar
     );
   }
 
@@ -140,7 +143,7 @@ export default class Alphabet {
    * @param {string} char
    * @returns {Letter | undefined}
    */
-  getLetter(char) {
+  getLetter(char: string) {
     return this.letters.find(
       (item) => item.uighurChar === char || item.shirkhanChar === char
     );
