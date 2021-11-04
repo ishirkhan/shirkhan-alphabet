@@ -10,3 +10,5 @@ export class Alphabet {
     return this._table;
   }
 }
+
+export * from "./converter";

@@ -9,7 +9,7 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ئ",
     volwes: false,
-    uly: "" + 0x0000,
+    uly: "" + String.fromCharCode(0x0000),
     khan: "?",
   },
   {
@@ -87,7 +87,7 @@ export const table: IAlphaItem[] = [
   {
     uchar: "چ",
     volwes: false,
-    uly: "ch" + 0x0000,
+    uly: "ch" + String.fromCharCode(0x0000),
     khan: "c'", // ch
   },
   {
@@ -117,7 +117,7 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ژ",
     volwes: false,
-    uly: "zh" + 0x0000,
+    uly: "zh" + String.fromCharCode(0x0000),
     khan: "z'", //zh
   },
   {
@@ -129,13 +129,13 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ش",
     volwes: false,
-    uly: "sh" + 0x0000,
+    uly: "sh" + String.fromCharCode(0x0000),
     khan: "x",
   },
   {
     uchar: "غ",
     volwes: false,
-    uly: "gh" + 0x0000,
+    uly: "gh" + String.fromCharCode(0x0000),
     khan: "g'", //gh
   },
   {
@@ -165,7 +165,7 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ڭ",
     volwes: false,
-    uly: "ng" + 0x0000,
+    uly: "ng" + String.fromCharCode(0x0000),
     khan: "n'",
   },
   {
