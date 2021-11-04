@@ -6,7 +6,7 @@
 - [ ] 开发针对单词的 u && uly 之间相互转换的转换器
 - [ ] 开发针对单词的 u && khan 之间相互转换的转换器
 
-- [ ] 提供单词转码器 encode,decode,这个要看齐 uEditor 的 encode 和 decode
+- [x] 提供单词转码器 encode,decode,这个要看齐 uCorrector 的 encode 和 decode
 
 # 开发和发布
 

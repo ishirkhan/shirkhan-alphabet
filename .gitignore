@@ -1,6 +1,5 @@
 node_modules
 .DS_Store
-dist
 dist-ssr
 *.local
 # Logs
@@ -87,7 +86,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
