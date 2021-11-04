@@ -2,7 +2,7 @@
   "name": "shirkhan-alphabet",
   "version": "0.0.1",
   "files": [
-    "lib"
+    "dist"
   ],
   "typings": "dist/main.d.ts",
   "main": "./dist/shirkhan-alphabet.umd.js",
