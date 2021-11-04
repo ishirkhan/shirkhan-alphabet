@@ -1,0 +1,48 @@
+Arguments: 
+  /Users/babbage/.nvm/versions/node/v12.22.1/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js init
+
+PATH: 
+  /Users/babbage/.nvm/versions/node/v12.22.1/bin:/usr/local/opt/node@10/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/sbin:/Users/babbage/go/bin:/usr/local/opt/mysql@5.5/bin:/usr/local/Cellar/node/10.4.1/lib/node_modules:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/babbage/opt/anaconda3/bin:/Users/babbage/opt/anaconda3/condabin:/Users/babbage/.nvm/versions/node/v12.22.1/bin:/usr/local/opt/node@10/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/sbin:/Users/babbage/go/bin:/usr/local/opt/mysql@5.5/bin:/usr/local/Cellar/node/10.4.1/lib/node_modules:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/mysql/bin:/Users/babbage/.composer/vendor/bin:/usr/local/mysql/bin:/Users/babbage/.composer/vendor/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.22.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:137009:13)
+      at Interface.emit (events.js:314:20)
+      at Interface._ttyWrite (readline.js:868:16)
+      at ReadStream.onkeypress (readline.js:205:10)
+      at ReadStream.emit (events.js:314:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1137:36)
+      at ReadStream.emit (events.js:314:20)
+      at addChunk (_stream_readable.js:297:12)
+
+npm manifest: 
+  {
+    "name": "shirkhan-alphabet",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "serve": "vite preview"
+    },
+    "devDependencies": {
+      "typescript": "^4.3.2",
+      "vite": "^2.6.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
