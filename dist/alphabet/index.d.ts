@@ -4,3 +4,4 @@ export declare class Alphabet {
     constructor();
     getTable(): IAlphaItem[];
 }
+export * from "./converter";

@@ -8,7 +8,7 @@ const table = [
   {
     uchar: "\u0626",
     volwes: false,
-    uly: "" + 0,
+    uly: "" + String.fromCharCode(0),
     khan: "?"
   },
   {
@@ -86,7 +86,7 @@ const table = [
   {
     uchar: "\u0686",
     volwes: false,
-    uly: "ch" + 0,
+    uly: "ch" + String.fromCharCode(0),
     khan: "c'"
   },
   {
@@ -116,7 +116,7 @@ const table = [
   {
     uchar: "\u0698",
     volwes: false,
-    uly: "zh" + 0,
+    uly: "zh" + String.fromCharCode(0),
     khan: "z'"
   },
   {
@@ -128,13 +128,13 @@ const table = [
   {
     uchar: "\u0634",
     volwes: false,
-    uly: "sh" + 0,
+    uly: "sh" + String.fromCharCode(0),
     khan: "x"
   },
   {
     uchar: "\u063A",
     volwes: false,
-    uly: "gh" + 0,
+    uly: "gh" + String.fromCharCode(0),
     khan: "g'"
   },
   {
@@ -164,7 +164,7 @@ const table = [
   {
     uchar: "\u06AD",
     volwes: false,
-    uly: "ng" + 0,
+    uly: "ng" + String.fromCharCode(0),
     khan: "n'"
   },
   {
@@ -204,6 +204,52 @@ const table = [
     khan: "y"
   }
 ];
+class U_Khan {
+  constructor() {
+    __publicField(this, "alphabet", new Alphabet());
+  }
+  toKhan(word) {
+    const uMap = {};
+    this.alphabet.getTable().forEach((item) => uMap[item.uchar] = item.khan);
+    return Array.from(word).map((item) => uMap[item] || item).join("");
+  }
+  toU(word) {
+    const table2 = this.alphabet.getTable();
+    table2.sort((a, b) => b.khan.length - a.khan.length).forEach((item) => {
+      word = word.replaceAll(item.khan, item.uchar);
+    });
+    return word;
+  }
+}
+class U_Uly {
+  constructor() {
+    __publicField(this, "alphabet", new Alphabet());
+  }
+  toUly(word) {
+    const uMap = {};
+    this.alphabet.getTable().forEach((item) => uMap[item.uchar] = item.uly);
+    return Array.from(word).map((item) => uMap[item] || item).join("");
+  }
+  toU(word) {
+    const table2 = this.alphabet.getTable();
+    table2.sort((a, b) => b.uly.length - a.uly.length).forEach((item) => {
+      word = word.replaceAll(item.uly, item.uchar);
+    });
+    return word;
+  }
+}
+function u2uly(word) {
+  return new U_Uly().toUly(word);
+}
+function uly2u(word) {
+  return new U_Uly().toU(word);
+}
+function u2khan(word) {
+  return new U_Khan().toKhan(word);
+}
+function khan2u(word) {
+  return new U_Khan().toU(word);
+}
 class Alphabet {
   constructor() {
     __publicField(this, "_table");
@@ -359,4 +405,4 @@ function encode(word) {
 function decode(word) {
   return Array.from(word).map((item) => tMap[item] || item).join("");
 }
-export { Alphabet, decode, encode };
+export { Alphabet, decode, encode, khan2u, u2khan, u2uly, uly2u };
