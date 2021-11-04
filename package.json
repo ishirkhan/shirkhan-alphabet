@@ -1,9 +1,21 @@
 {
   "name": "shirkhan-alphabet",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "files": [
+    "lib"
+  ],
+  "typings": "dist/main.d.ts",
+  "main": "./dist/shirkhan-alphabet.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/shirkhan-alphabet.es.js",
+      "require": "./dist/shirkhan-alphabet.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
+    "postbuild": "tsc",
     "serve": "vite preview"
   },
   "devDependencies": {
