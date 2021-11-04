@@ -213,7 +213,150 @@ class Alphabet {
     return this._table;
   }
 }
-const alphabetTable = new Alphabet().getTable();
-console.table(alphabetTable);
-const elem = `<div style="font-size:32px;color:red;text-align:center"> shirkhan alphabet</div>`;
-document.body.innerHTML = elem;
+const EncryptMap = [
+  {
+    schar: "\u0626",
+    tchar: "q"
+  },
+  {
+    schar: "\u0627",
+    tchar: "w"
+  },
+  {
+    schar: "\u06D5",
+    tchar: "e"
+  },
+  {
+    schar: "\u0628",
+    tchar: "r"
+  },
+  {
+    schar: "\u067E",
+    tchar: "t"
+  },
+  {
+    schar: "\u062A",
+    tchar: "y"
+  },
+  {
+    schar: "\u062C",
+    tchar: "u"
+  },
+  {
+    schar: "\u0686",
+    tchar: "i"
+  },
+  {
+    schar: "\u062E",
+    tchar: "o"
+  },
+  {
+    schar: "\u062F",
+    tchar: "p"
+  },
+  {
+    schar: "\u0631",
+    tchar: "a"
+  },
+  {
+    schar: "\u0632",
+    tchar: "s"
+  },
+  {
+    schar: "\u0698",
+    tchar: "d"
+  },
+  {
+    schar: "\u0633",
+    tchar: "f"
+  },
+  {
+    schar: "\u0634",
+    tchar: "g"
+  },
+  {
+    schar: "\u063A",
+    tchar: "h"
+  },
+  {
+    schar: "\u0641",
+    tchar: "j"
+  },
+  {
+    schar: "\u0642",
+    tchar: "k"
+  },
+  {
+    schar: "\u0643",
+    tchar: "l"
+  },
+  {
+    schar: "\u06AF",
+    tchar: "z"
+  },
+  {
+    schar: "\u0644",
+    tchar: "x"
+  },
+  {
+    schar: "\u06AD",
+    tchar: "c"
+  },
+  {
+    schar: "\u0645",
+    tchar: "v"
+  },
+  {
+    schar: "\u0646",
+    tchar: "b"
+  },
+  {
+    schar: "\u06BE",
+    tchar: "n"
+  },
+  {
+    schar: "\u0648",
+    tchar: "m"
+  },
+  {
+    schar: "\u06C7",
+    tchar: "7"
+  },
+  {
+    schar: "\u06C6",
+    tchar: "6"
+  },
+  {
+    schar: "\u06C8",
+    tchar: "5"
+  },
+  {
+    schar: "\u06CB",
+    tchar: "4"
+  },
+  {
+    schar: "\u06D0",
+    tchar: "3"
+  },
+  {
+    schar: "\u0649",
+    tchar: "2"
+  },
+  {
+    schar: "\u064A",
+    tchar: "1"
+  }
+];
+const sMap = {};
+const tMap = {};
+EncryptMap.forEach((item) => {
+  sMap[item.schar] = item.tchar;
+  tMap[item.tchar] = item.schar;
+});
+function encode(word) {
+  return Array.from(word).map((item) => sMap[item] || item).join("");
+}
+function decode(word) {
+  return Array.from(word).map((item) => tMap[item] || item).join("");
+}
+export { Alphabet, decode, encode };
