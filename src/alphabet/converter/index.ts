@@ -1,5 +1,5 @@
-import { U_Khan as ukConverter } from "./khan";
-import { U_Uly as uuConverter } from "./uly";
+import { Khan as ukConverter } from "./khan";
+import { Uly as uuConverter } from "./uly";
 
 export function u2uly(word: string) {
   return new uuConverter().convert(word);
