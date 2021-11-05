@@ -204,51 +204,60 @@ const table = [
     khan: "y"
   }
 ];
-class U_Khan {
+class Base {
   constructor() {
+    __publicField(this, "type");
     __publicField(this, "alphabet", new Alphabet());
   }
-  toKhan(word) {
-    const uMap = {};
-    this.alphabet.getTable().forEach((item) => uMap[item.uchar] = item.khan);
-    return Array.from(word).map((item) => uMap[item] || item).join("");
+  orderedTable() {
+    return this.alphabet.getTable().sort((a, b) => {
+      var _a, _b;
+      return ((_a = b[this.type]) == null ? void 0 : _a.length) - ((_b = a[this.type]) == null ? void 0 : _b.length);
+    });
   }
-  toU(word) {
-    const table2 = this.alphabet.getTable();
-    table2.sort((a, b) => b.khan.length - a.khan.length).forEach((item) => {
-      word = word.replaceAll(item.khan, item.uchar);
+  getMap() {
+    const kvmap = {};
+    this.orderedTable().forEach((item) => {
+      kvmap[item[this.type]] = item.uchar;
+    });
+    return kvmap;
+  }
+  convert(uword) {
+    Object.entries(this.getMap()).forEach(([key, value]) => {
+      uword = uword.replaceAll(value, key);
+    });
+    return uword;
+  }
+  forward(word) {
+    Object.entries(this.getMap()).forEach(([key, value]) => {
+      word = word.replaceAll(key, value);
     });
     return word;
   }
 }
-class U_Uly {
+class U_Khan extends Base {
   constructor() {
-    __publicField(this, "alphabet", new Alphabet());
+    super(...arguments);
+    __publicField(this, "type", "khan");
   }
-  toUly(word) {
-    const uMap = {};
-    this.alphabet.getTable().forEach((item) => uMap[item.uchar] = item.uly);
-    return Array.from(word).map((item) => uMap[item] || item).join("");
-  }
-  toU(word) {
-    const table2 = this.alphabet.getTable();
-    table2.sort((a, b) => b.uly.length - a.uly.length).forEach((item) => {
-      word = word.replaceAll(item.uly, item.uchar);
-    });
-    return word;
+}
+class U_Uly extends Base {
+  constructor() {
+    super(...arguments);
+    __publicField(this, "type", "uly");
   }
 }
 function u2uly(word) {
-  return new U_Uly().toUly(word);
+  return new U_Uly().convert(word);
 }
 function uly2u(word) {
-  return new U_Uly().toU(word);
+  return new U_Uly().forward(word);
 }
 function u2khan(word) {
-  return new U_Khan().toKhan(word);
+  return new U_Khan().convert(word);
 }
 function khan2u(word) {
-  return new U_Khan().toU(word);
+  return new U_Khan().forward(word);
 }
 class Alphabet {
   constructor() {
