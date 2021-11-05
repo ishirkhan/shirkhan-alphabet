@@ -17,9 +17,20 @@
     "start": "vite",
     "build": "tsc && vite build",
     "postbuild": "tsc",
-    "serve": "vite preview"
+    "test": "jest "
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }
