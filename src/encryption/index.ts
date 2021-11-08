@@ -1,13 +1,4 @@
-import { sMap, tMap } from "./encrypt-map";
+import { encode } from "./encode";
+import { decode } from "./decode";
 
-export function encode(word: string) {
-  return Array.from(word)
-    .map((item) => sMap[item] || item)
-    .join("");
-}
-
-export function decode(word: string) {
-  return Array.from(word)
-    .map((item) => tMap[item] || item)
-    .join("");
-}
+export { encode, decode };

@@ -5,11 +5,12 @@ export interface IAlphaItem {
   khan: string;
 }
 
+export const BOUND_FLAG = String.fromCharCode(0x0000);
 export const table: IAlphaItem[] = [
   {
     uchar: "ئ",
     volwes: false,
-    uly: "" + String.fromCharCode(0x0000),
+    uly: BOUND_FLAG,
     khan: "?",
   },
   {
@@ -28,7 +29,7 @@ export const table: IAlphaItem[] = [
     uchar: "ې",
     volwes: true,
     uly: "ë",
-    khan: "e'", //ae
+    khan: "e'", //e'
   },
   {
     uchar: "ى",
@@ -52,13 +53,13 @@ export const table: IAlphaItem[] = [
     uchar: "ۆ",
     volwes: true,
     uly: "ö",
-    khan: "c",
+    khan: "c", //o'
   },
   {
     uchar: "ۈ",
     volwes: true,
     uly: "ü",
-    khan: "v",
+    khan: "v", //u'
   },
   {
     uchar: "ب",
@@ -87,14 +88,14 @@ export const table: IAlphaItem[] = [
   {
     uchar: "چ",
     volwes: false,
-    uly: "ch" + String.fromCharCode(0x0000),
-    khan: "c'", // ch
+    uly: "ch",
+    khan: "ch", // c'
   },
   {
     uchar: "خ",
     volwes: false,
     uly: "x",
-    khan: "k'", // kh
+    khan: "kh", // k'
   },
   {
     uchar: "د",
@@ -117,8 +118,8 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ژ",
     volwes: false,
-    uly: "zh" + String.fromCharCode(0x0000),
-    khan: "z'", //zh
+    uly: "zh",
+    khan: "zh", //z'
   },
   {
     uchar: "س",
@@ -129,14 +130,14 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ش",
     volwes: false,
-    uly: "sh" + String.fromCharCode(0x0000),
+    uly: "sh",
     khan: "x",
   },
   {
     uchar: "غ",
     volwes: false,
-    uly: "gh" + String.fromCharCode(0x0000),
-    khan: "g'", //gh
+    uly: "gh",
+    khan: "gh", //g'
   },
   {
     uchar: "ق",
@@ -165,8 +166,8 @@ export const table: IAlphaItem[] = [
   {
     uchar: "ڭ",
     volwes: false,
-    uly: "ng" + String.fromCharCode(0x0000),
-    khan: "n'",
+    uly: "ng",
+    khan: "ng",
   },
   {
     uchar: "ل",

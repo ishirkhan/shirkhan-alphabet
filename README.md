@@ -9,8 +9,13 @@
 - [x] 开发针对单词的 u && khan 之间相互转换的转换器
 - [x] 提供单词转码器 encode,decode,这个要看齐 uCorrector 的 encode 和 decode
 - [x] 接入测试
-- [ ] 补全测试用例
+- [x] 补全测试用例
 - [ ] 新增分音节功能
+
+# Bug
+
+- [ ] 单词转换逻辑没有使用边界符号导致的部分单词无法还原正常问题修复 如: bikham
+- [ ] uly Hemze 问题，主要是首字母 Hemze 和中间有 hemze 的场景 如: adem reisi
 
 # 开发和发布
 
@@ -20,6 +25,10 @@
 
   > yarn start
 
-- 编译
+## 编译
 
-  > yarn build
+> yarn build
+
+## 测试
+
+> yarn test
