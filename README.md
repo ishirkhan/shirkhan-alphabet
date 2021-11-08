@@ -10,6 +10,7 @@
 - [x] 提供单词转码器 encode,decode,这个要看齐 uCorrector 的 encode 和 decode
 - [x] 接入测试
 - [ ] 补全测试用例
+- [ ] 新增分音节功能
 
 # 开发和发布
 
