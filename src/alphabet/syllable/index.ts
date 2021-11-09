@@ -1,5 +1,5 @@
-import type { IAlphaItem } from "./table";
-import { table } from "./table";
+import type { IAlphaItem } from "../table";
+import { table } from "../table";
 
 /**
 - 规则

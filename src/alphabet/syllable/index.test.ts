@@ -1,4 +1,4 @@
-import { Syllable } from "./syllable";
+import { Syllable } from ".";
 
 const syllable = new Syllable();
 
