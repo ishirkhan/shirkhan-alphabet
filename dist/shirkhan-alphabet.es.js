@@ -4,11 +4,12 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
+const BOUND_FLAG = String.fromCharCode(0);
 const table = [
   {
     uchar: "\u0626",
     volwes: false,
-    uly: "" + String.fromCharCode(0),
+    uly: BOUND_FLAG,
     khan: "?"
   },
   {
@@ -86,14 +87,14 @@ const table = [
   {
     uchar: "\u0686",
     volwes: false,
-    uly: "ch" + String.fromCharCode(0),
-    khan: "c'"
+    uly: "ch",
+    khan: "ch"
   },
   {
     uchar: "\u062E",
     volwes: false,
     uly: "x",
-    khan: "k'"
+    khan: "kh"
   },
   {
     uchar: "\u062F",
@@ -116,8 +117,8 @@ const table = [
   {
     uchar: "\u0698",
     volwes: false,
-    uly: "zh" + String.fromCharCode(0),
-    khan: "z'"
+    uly: "zh",
+    khan: "zh"
   },
   {
     uchar: "\u0633",
@@ -128,14 +129,14 @@ const table = [
   {
     uchar: "\u0634",
     volwes: false,
-    uly: "sh" + String.fromCharCode(0),
+    uly: "sh",
     khan: "x"
   },
   {
     uchar: "\u063A",
     volwes: false,
-    uly: "gh" + String.fromCharCode(0),
-    khan: "g'"
+    uly: "gh",
+    khan: "gh"
   },
   {
     uchar: "\u0642",
@@ -164,8 +165,8 @@ const table = [
   {
     uchar: "\u06AD",
     volwes: false,
-    uly: "ng" + String.fromCharCode(0),
-    khan: "n'"
+    uly: "ng",
+    khan: "ng"
   },
   {
     uchar: "\u0644",
@@ -204,6 +205,74 @@ const table = [
     khan: "y"
   }
 ];
+class Syllable {
+  constructor() {
+    __publicField(this, "_table");
+    this._table = table;
+  }
+  getTable() {
+    return this._table;
+  }
+  tokenize(word) {
+    const volwes = this._table.filter((item) => item.volwes).map((item) => item.uchar);
+    return word.split("").map((char) => volwes.indexOf(char) !== -1 ? 1 : 0).join("");
+  }
+  tokenToGroup(token) {
+    return token.replaceAll("1", "1#").split("#");
+  }
+  groupToPositional(group) {
+    return group.reverse().map((item, index) => {
+      if (index === 0 || index === group.length - 1)
+        return item;
+      switch (item.replace("1", "").length) {
+        case 1:
+          return "#" + item;
+        case 2:
+          return [item[0], "#", item.slice(1, 3)].join("");
+        case 3:
+          return [item[0], "#", item.slice(1, 3), item.slice(-1)].join("");
+        case 4:
+          return [item[0], "#", item.slice(1, 3), "#", item.slice(-1)].join("");
+        case 5:
+          return [item[0], "#", item.slice(1, 4), "#", item.slice(-1)].join("");
+        default:
+          return item;
+      }
+    }).reverse();
+  }
+  positinalGroupToWord(positinalGroup, word) {
+    const syllableList = [];
+    let counter = 0;
+    positinalGroup.join("").split("").forEach((item, index) => {
+      if (item === "#") {
+        counter += 1;
+        syllableList.push("#");
+        return;
+      }
+      syllableList.push(word[index - counter]);
+    });
+    return syllableList.join("").split("#");
+  }
+  syllable(word) {
+    const token = this.tokenize(word);
+    let group = this.tokenToGroup(token);
+    const positionalGroup = this.groupToPositional(group);
+    const sylableWord = this.positinalGroupToWord(positionalGroup, word);
+    return sylableWord;
+  }
+}
+class Alphabet {
+  constructor() {
+    __publicField(this, "_table");
+    this._table = table;
+  }
+  getTable() {
+    return this._table;
+  }
+  syllable(word) {
+    return new Syllable().syllable(word);
+  }
+}
 class Base {
   constructor() {
     __publicField(this, "type");
@@ -217,56 +286,41 @@ class Base {
   }
   getMap() {
     const kvmap = {};
-    this.orderedTable().forEach((item) => {
-      kvmap[item[this.type]] = item.uchar;
-    });
+    this.orderedTable().forEach((item) => kvmap[item[this.type]] = item.uchar);
     return kvmap;
   }
   convert(uword) {
-    Object.entries(this.getMap()).forEach(([key, value]) => {
-      uword = uword.replaceAll(value, key);
-    });
+    Object.entries(this.getMap()).forEach(([key, value]) => uword = uword.replaceAll(value, key));
     return uword;
   }
   forward(word) {
-    Object.entries(this.getMap()).forEach(([key, value]) => {
-      word = word.replaceAll(key, value);
-    });
+    Object.entries(this.getMap()).forEach(([key, value]) => word = word.replaceAll(key, value));
     return word;
   }
 }
-class U_Khan extends Base {
+class Khan extends Base {
   constructor() {
     super(...arguments);
     __publicField(this, "type", "khan");
   }
 }
-class U_Uly extends Base {
+class Uly extends Base {
   constructor() {
     super(...arguments);
     __publicField(this, "type", "uly");
   }
 }
 function u2uly(word) {
-  return new U_Uly().convert(word);
+  return new Uly().convert(word);
 }
 function uly2u(word) {
-  return new U_Uly().forward(word);
+  return new Uly().forward(word);
 }
 function u2khan(word) {
-  return new U_Khan().convert(word);
+  return new Khan().convert(word);
 }
 function khan2u(word) {
-  return new U_Khan().forward(word);
-}
-class Alphabet {
-  constructor() {
-    __publicField(this, "_table");
-    this._table = table;
-  }
-  getTable() {
-    return this._table;
-  }
+  return new Khan().forward(word);
 }
 const EncryptMap = [
   {
@@ -414,4 +468,4 @@ function encode(word) {
 function decode(word) {
   return Array.from(word).map((item) => tMap[item] || item).join("");
 }
-export { Alphabet, decode, encode, khan2u, u2khan, u2uly, uly2u };
+export { Alphabet, Syllable, decode, encode, khan2u, u2khan, u2uly, uly2u };

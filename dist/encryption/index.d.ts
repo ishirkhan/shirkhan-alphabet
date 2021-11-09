@@ -1,2 +1,3 @@
-export declare function encode(word: string): string;
-export declare function decode(word: string): string;
+import { encode } from "./encode";
+import { decode } from "./decode";
+export { encode, decode };

@@ -1,6 +1,7 @@
-import { Alphabet } from "..";
-import { IAlphaItem } from "../table";
-import { Contract, ConvertType } from "./contract";
+import { Alphabet } from "../alphabet";
+import type { IAlphaItem } from "../table";
+import { Contract } from "./contract";
+import type { ConvertType } from "./contract";
 export declare class Base implements Contract {
     type: ConvertType;
     alphabet: Alphabet;
