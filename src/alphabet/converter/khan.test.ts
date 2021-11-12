@@ -2,7 +2,7 @@ import { Khan } from "./khan";
 
 const khan = new Khan();
 const uStr = "شىرخاننىڭكىدىكىدەك";
-const khanStr = "xirkhanningkidikidek";
+const khanStr = "shirkhanningkidikidek";
 
 describe("测试 khan 转换功能", () => {
   test("母语转换 khan", () => {
