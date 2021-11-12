@@ -28,7 +28,7 @@ const table = [
     uchar: "\u06D0",
     volwes: true,
     uly: "\xEB",
-    khan: "e'"
+    khan: "eh"
   },
   {
     uchar: "\u0649",
@@ -130,7 +130,7 @@ const table = [
     uchar: "\u0634",
     volwes: false,
     uly: "sh",
-    khan: "x"
+    khan: "sh"
   },
   {
     uchar: "\u063A",
@@ -190,7 +190,7 @@ const table = [
     uchar: "\u06BE",
     volwes: false,
     uly: "h",
-    khan: "h"
+    khan: "x"
   },
   {
     uchar: "\u06CB",
@@ -321,6 +321,12 @@ function u2khan(word) {
 }
 function khan2u(word) {
   return new Khan().forward(word);
+}
+function textToWords(text) {
+  text = text.trim();
+  if (text.length === 0)
+    return [];
+  return text.replace(new RegExp("[^\u0686\u06CB\u06D0\u0631\u062A\u064A\u06C7\u06AD\u0648\u067E\u06BE\u0633\u062F\u0627\u06D5\u0649\u0642\u0643\u0644\u0632\u0634\u063A\u06C8\u0628\u0646\u0645\u0626\u0644\u0627\u06C6\u062C\u062E\u06AF\u0641\u0698\u0674\u062D\u0639\u06C9\u06C5]", "g"), " ").split(" ").filter((item) => item.trim().length);
 }
 const EncryptMap = [
   {
@@ -468,4 +474,4 @@ function encode(word) {
 function decode(word) {
   return Array.from(word).map((item) => tMap[item] || item).join("");
 }
-export { Alphabet, Syllable, decode, encode, khan2u, u2khan, u2uly, uly2u };
+export { Alphabet, Syllable, decode, encode, khan2u, textToWords, u2khan, u2uly, uly2u };
