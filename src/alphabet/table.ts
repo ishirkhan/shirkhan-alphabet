@@ -6,6 +6,8 @@ export interface IAlphaItem {
 }
 
 export const BOUND_FLAG = String.fromCharCode(0x0000);
+
+export const HEMZE = "ئ‍";
 export const table: IAlphaItem[] = [
   {
     uchar: "ئ",

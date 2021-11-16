@@ -5,6 +5,7 @@ var __publicField = (obj, key, value) => {
   return value;
 };
 const BOUND_FLAG = String.fromCharCode(0);
+const HEMZE = "\u0626\u200D";
 const table = [
   {
     uchar: "\u0626",
@@ -263,11 +264,19 @@ class Syllable {
 }
 class Alphabet {
   constructor() {
-    __publicField(this, "_table");
+    __publicField(this, "_table", []);
+    __publicField(this, "_volwes", []);
     this._table = table;
+    this._table.forEach((item) => item.volwes && this._volwes.push(item.uchar));
   }
   getTable() {
     return this._table;
+  }
+  getVolwes() {
+    return this._volwes;
+  }
+  isVolwes(char) {
+    return this._volwes.includes(char);
   }
   syllable(word) {
     return new Syllable().syllable(word);
@@ -474,4 +483,4 @@ function encode(word) {
 function decode(word) {
   return Array.from(word).map((item) => tMap[item] || item).join("");
 }
-export { Alphabet, Syllable, decode, encode, khan2u, textToWords, u2khan, u2uly, uly2u };
+export { Alphabet, BOUND_FLAG, HEMZE, Syllable, decode, encode, khan2u, table, textToWords, u2khan, u2uly, uly2u };
