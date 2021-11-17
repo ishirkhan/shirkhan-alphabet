@@ -34,8 +34,8 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
-    "shirkhan-alphabet-converter": "^0.0.1",
-    "shirkhan-alphabet-syllable": "^0.0.1",
-    "shirkhan-alphabet-table": "^0.0.1"
+    "shirkhan-alphabet-converter": "^0.0.x",
+    "shirkhan-alphabet-syllable": "^0.0.x",
+    "shirkhan-alphabet-table": "^0.0.x"
   }
 }
