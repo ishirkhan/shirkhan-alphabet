@@ -1,11 +1,11 @@
 {
   "name": "shirkhan-alphabet",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "files": [
     "dist",
     "docs"
   ],
-  "typings": "dist/index.d.ts",
+  "typings": "dist/alphabet/index.d.ts",
   "main": "./dist/shirkhan-alphabet.umd.js",
   "exports": {
     ".": {
@@ -33,5 +33,10 @@
     "jest": "^27.3.1",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "shirkhan-alphabet-converter": "^0.0.1",
+    "shirkhan-alphabet-syllable": "^0.0.1",
+    "shirkhan-alphabet-table": "^0.0.1"
   }
 }

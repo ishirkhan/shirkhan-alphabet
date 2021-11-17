@@ -8,7 +8,7 @@ module.exports = defineConfig({
     sourcemap: false,
     lib: {
       name: "shirkhan-alphabet",
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: path.resolve(__dirname, "src/alphabet/index.ts"),
       fileName: (format) => `shirkhan-alphabet.${format}.js`,
     },
     rollupOptions: {},

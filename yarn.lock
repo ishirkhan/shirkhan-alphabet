@@ -3100,6 +3100,25 @@ shebang-regex@^3.0.0:
   resolved "https://registry.nlark.com/shebang-regex/download/shebang-regex-3.0.0.tgz?cache=0&sync_timestamp=1628896233610&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fshebang-regex%2Fdownload%2Fshebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
+shirkhan-alphabet-converter@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/shirkhan-alphabet-converter/-/shirkhan-alphabet-converter-0.0.1.tgz#b445ae0b2ea58f7f8a92e1f24e07d7e28c15da9c"
+  integrity sha512-sW1Q3wIu3qjDoZ68WLGumezsVDk8CcmFywbbjok+VnqJfStLXo9d32sbrLW7VTi3dEc8w6zCJ1gOY6tw81CMSw==
+  dependencies:
+    shirkhan-alphabet-table "^0.0.1"
+
+shirkhan-alphabet-syllable@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-syllable/download/shirkhan-alphabet-syllable-0.0.1.tgz#09ab6fb26bcec0f810b0fb349f643b32e2703244"
+  integrity sha512-DqF7xqFwAQeQB9ptubxDnfFrUAxAG+zWiXXgidQfzMsCCf/WjSaiiuoT0GnVil6ri6IHixQYG4g62U1JW/rkqA==
+  dependencies:
+    shirkhan-alphabet-table "^0.0.1"
+
+shirkhan-alphabet-table@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-0.0.1.tgz#6efe0fa446982f0a5ab98eb09d20fc455d42372f"
+  integrity sha512-kDVSAxISTWJNNWeUgscL676bKxFlwR3dTvcg7VpNI35xfMZLA+u0XxB8fVp+cHYDt5+Dj2N84t3H6SYfTH0qeA==
+
 signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.5"
   resolved "https://registry.npmmirror.com/signal-exit/download/signal-exit-3.0.5.tgz?cache=0&sync_timestamp=1632948639339&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsignal-exit%2Fdownload%2Fsignal-exit-3.0.5.tgz#9e3e8cc0c75a99472b44321033a7702e7738252f"
