@@ -1,9 +1,8 @@
 {
   "name": "shirkhan-alphabet",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "files": [
-    "dist",
-    "docs"
+    "dist"
   ],
   "typings": "dist/alphabet/index.d.ts",
   "main": "./dist/shirkhan-alphabet.umd.js",
