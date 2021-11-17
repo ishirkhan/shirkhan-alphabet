@@ -4,13 +4,13 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
-const BOUND_FLAG$2 = String.fromCharCode(0);
+const BOUND_FLAG$2 = "'";
 const table$2 = [
   {
     uchar: "\u0626",
     volwes: false,
     uly: BOUND_FLAG$2,
-    khan: "?"
+    khan: BOUND_FLAG$2
   },
   {
     uchar: "\u0627",
