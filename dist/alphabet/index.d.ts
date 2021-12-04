@@ -1,2 +1,3 @@
-import { Alphabet } from "./alphabet";
-export { Alphabet as default };
+export * from "./table";
+export * from "./converter";
+export * from "./syllable";
