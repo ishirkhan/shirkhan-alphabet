@@ -6,10 +6,49 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
+  <style>
+    #app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    #app div {
+      width: 100%;
+      height: 100%;
+    }
+
+    #result {
+      direction: rtl;
+      border: 1px solid red;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="app"></div>
+
+
+  <div id="app">
+    <div id="content">
+      <textarea name="test" id="test" cols="50" rows="30">
+## Intro
+
+remark is a very popular ecosystem of plugins that work with markdown as
+structured data, specifically ASTs (abstract syntax trees).
+ASTs make it easy for programs to deal with markdown.
+We call those programs plugins.
+Plugins inspect and change trees.
+You can use the many existing plugins or you can make your own.
+
+- to learn markdown, see this [cheatsheet and tutorial][cheat]
+- for more about us, see [`unifiedjs.com`][site]
+- for updates, see [Twitter][]
+- for questions, see [support][]
+- to help, see [contribute][] or [sponsor][] below
+  </textarea>
+    </div>
+    <div id="result"></div>
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 

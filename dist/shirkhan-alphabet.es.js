@@ -240,90 +240,6 @@ const table$1 = [
     khan: "?",
     volwes: false,
     punctuation: true
-  },
-  {
-    ug: "(",
-    uly: ")",
-    khan: ")",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "{",
-    uly: "}",
-    khan: "}",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "}",
-    uly: "{",
-    khan: "{",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "[",
-    uly: "]",
-    khan: "]",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "]",
-    uly: "[",
-    khan: "[",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "<",
-    uly: ">",
-    khan: ">",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: ">",
-    uly: "<",
-    khan: "<",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "!",
-    uly: "!",
-    khan: "!",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: ".",
-    uly: ".",
-    khan: ".",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: ":",
-    uly: ":",
-    khan: ":",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "-",
-    uly: "-",
-    khan: "-",
-    volwes: false,
-    punctuation: true
-  },
-  {
-    ug: "$",
-    uly: "$",
-    khan: "$",
-    volwes: false,
-    punctuation: true
   }
 ];
 function volwes() {
@@ -2266,37 +2182,45 @@ const visit = function(tree, test, visitor, reverse) {
 };
 const BOUNDARY_SYMBOL = "/";
 let stopConvert = false;
-function handleBoundaryNode(node) {
-  if (node.type === "PunctuationNode" && node.value === BOUNDARY_SYMBOL) {
-    stopConvert = !stopConvert;
-    node.value = "";
+function handleBoundaryNode(node, index2, parent) {
+  if (node.type !== "PunctuationNode" && node.type !== "SymbolNode")
+    return;
+  if (node.value !== BOUNDARY_SYMBOL)
+    return;
+  if (index2 > 0) {
+    const preNode = parent.children[index2 - 1];
+    if ((preNode == null ? void 0 : preNode.value) && preNode.value === "<") {
+      return;
+    }
   }
+  stopConvert = !stopConvert;
+  node.value = "";
 }
-function handleChildrenNode(node, converter) {
+function handleChildrenNode(node, converter, index2, parent) {
   if (node.type === "WhiteSpaceNode")
     return node;
   if (node.type === "PunctuationNode")
-    handleBoundaryNode(node);
+    handleBoundaryNode(node, index2, parent);
   if (!stopConvert && (node == null ? void 0 : node.value)) {
     node.value = converter(node.value);
   }
   if (!(node == null ? void 0 : node.children))
     return node;
-  node.children.forEach((childNode) => {
-    handleChildrenNode(childNode, converter);
+  node.children.forEach((childNode, i) => {
+    handleChildrenNode(childNode, converter, i, node);
   });
   return node;
 }
 function TextConverter(converter) {
   stopConvert = false;
   return (tree) => {
-    visit(tree, "SentenceNode", (node) => {
-      handleChildrenNode(node, converter);
+    visit(tree, "SentenceNode", (node, index2, parent) => {
+      handleChildrenNode(node, converter, index2, parent);
     });
   };
 }
 function escapeSpecialCharacters(specialChars) {
-  const regex = /[\^\$\.\*\+\?\|\\\/\[\]\{\}\=\!\:\-\,]/gi;
+  const regex = /[\^\$\.\*\+\?\|\\\/\[\]\{\}\=\!\:\-\,\(\)]/gi;
   const match = specialChars.match(regex);
   if (match) {
     for (let item of match) {
@@ -2323,7 +2247,7 @@ class Base {
   }
   getMap() {
     const kvmap = {};
-    this.orderedTable().forEach((item) => kvmap[item[this.type]] = item.uchar);
+    this.orderedTable().forEach((item) => kvmap[item[this.type]] = item.ug);
     return kvmap;
   }
   fromUg(uword) {
@@ -2332,7 +2256,7 @@ class Base {
   }
   toUg(word2) {
     Object.entries(this.getMap()).forEach(([key, value]) => word2 = replaceAll(word2, key, value));
-    const volwes2 = this.table.filter((item) => item.volwes).map((item) => item.uchar);
+    const volwes2 = this.table.filter((item) => item.volwes).map((item) => item.ug);
     return volwes2.includes(word2[0]) ? this.hemze + word2 : word2;
   }
   toUgText(text) {
@@ -2358,7 +2282,7 @@ function ug2khan(word2) {
 function khan2ug(word2) {
   return khan.toUg(word2);
 }
-function khan2ugText(text) {
+function khanText2ug(text) {
   return khan.toUgText(text);
 }
 const uly = new Uly(table$1, HEMZE);
@@ -2368,7 +2292,7 @@ function ug2uly(word2) {
 function uly2ug(word2) {
   return uly.toUg(word2);
 }
-function uly2ugText(text) {
+function ulyText2ug(text) {
   return uly.toUgText(text);
 }
 var __defProp = Object.defineProperty;
@@ -2637,4 +2561,4 @@ class Syllable {
 function syllableUg(word2) {
   return new Syllable().syllable(word2);
 }
-export { BOUNDARY_SYMBOL$1 as BOUNDARY_SYMBOL, Base as BaseConverter, FORMATMAEK, HEMZE, Khan as KhanConverter, URGHU, Uly as UlyConverter, isVolwes, khan2ug, khan2ugText, syllableUg, table$1 as table, ug2khan, ug2uly, Syllable as ugSyllable, uly2ug, uly2ugText, volwes };
+export { BOUNDARY_SYMBOL$1 as BOUNDARY_SYMBOL, Base as BaseConverter, FORMATMAEK, HEMZE, Khan as KhanConverter, URGHU, Uly as UlyConverter, isVolwes, khan2ug, khanText2ug, syllableUg, table$1 as table, ug2khan, ug2uly, Syllable as ugSyllable, uly2ug, ulyText2ug, volwes };

@@ -1207,6 +1207,11 @@
     jest-diff "^27.0.0"
     pretty-format "^27.0.0"
 
+"@types/marked@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/@types/marked/-/marked-4.0.1.tgz#d588a7bbc4d6551c5e75249bc106ffda96ae33c5"
+  integrity sha512-ZigEmCWdNUU7IjZEuQ/iaimYdDHWHfTe3kg8ORfKjyGYd9RWumPoOJRQXB0bO+XLkNwzCthW3wUIQtANaEZ1ag==
+
 "@types/nlcst@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmmirror.com/@types/nlcst/download/@types/nlcst-1.0.0.tgz#9dacd7e9a32bcf0451873be62bdc373aed735b46"
@@ -2755,6 +2760,11 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+marked@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npmjs.org/marked/-/marked-4.0.6.tgz#cd199503102b6807354f00574348d41ad4fd25d2"
+  integrity sha512-+H0bTf8DM8zLuFBUm/2VklxaCrwlBFgoJzHJcMZCnZ9cPgsllHwKpL6TPLdDeA38yPluMuVKOL1hO5w6HmG5Mg==
+
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.nlark.com/merge-stream/download/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -3189,9 +3199,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shirkhan-alphabet-converter@^0.0.x:
-  version "0.0.9"
-  resolved "https://registry.npmmirror.com/shirkhan-alphabet-converter/download/shirkhan-alphabet-converter-0.0.9.tgz#85dcd8f01ce9dffd5a922fcdb04a21e1aea9cee1"
-  integrity sha512-s+WgGOx2tnB2byueX6oAuYV5sHUePzeYw+GIBgQlgx8p01p7HlR/YdugGaDEhqFRHwhq42GlC0ROA/lrj+AqXQ==
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-converter/download/shirkhan-alphabet-converter-0.0.10.tgz#1dd3da8699f691d3a8ee17c3947db72edd442277"
+  integrity sha512-EGC8tD7+ZqfuCuoQ7FLBpDk7fA9Xe9qnrZ7f/zKr7mh/7lri4d6ymx4R1hJb33mLnNndZjh3xJ4hsKeK7HAE2w==
   dependencies:
     retext "^8.1.0"
     unist-util-visit "^4.1.0"
