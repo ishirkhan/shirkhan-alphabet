@@ -3199,9 +3199,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shirkhan-alphabet-converter@^0.0.x:
-  version "0.0.10"
-  resolved "https://registry.npmmirror.com/shirkhan-alphabet-converter/download/shirkhan-alphabet-converter-0.0.10.tgz#1dd3da8699f691d3a8ee17c3947db72edd442277"
-  integrity sha512-EGC8tD7+ZqfuCuoQ7FLBpDk7fA9Xe9qnrZ7f/zKr7mh/7lri4d6ymx4R1hJb33mLnNndZjh3xJ4hsKeK7HAE2w==
+  version "0.0.11"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-converter/download/shirkhan-alphabet-converter-0.0.11.tgz#0ba30d76f49915db5280767f27424fb5eccd2bc0"
+  integrity sha512-gURLJok/ZBuZcb3ZmpYVYjfCL/lRqALUJLUH5DpsB6F23VO87SZk/Y/TtF4iYcElWQq5jhR7Uf0xn8kgYFc6Kw==
   dependencies:
     retext "^8.1.0"
     unist-util-visit "^4.1.0"
@@ -3214,9 +3214,9 @@ shirkhan-alphabet-syllable@^0.0.x:
     shirkhan-alphabet-table "^0.0.x"
 
 shirkhan-alphabet-table@^0.0.x:
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/shirkhan-alphabet-table/-/shirkhan-alphabet-table-0.0.7.tgz#99eddb8f78ae79e75cf4589367cf8093ca03e748"
-  integrity sha512-3ar++5tShBUAQNDXvKX/LYQu493bhMlqHMzM2y2ttlLohSPS43y1iIgVeNrn6s4AJjV0nlFFcroCDsrlBz3Oqw==
+  version "0.0.9"
+  resolved "https://registry.npmmirror.com/shirkhan-alphabet-table/download/shirkhan-alphabet-table-0.0.9.tgz#7287edbc71daa4f39c525a789d56a879f500ad94"
+  integrity sha512-6nWhc7z4NUWL8M9iueAbVGQ1bVx8uW1CqCu/YKKOcVo6H0xRLs5h4M803aeo5f7szC1tHxNEcHHL6ZvDl89zXg==
 
 signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.6"
