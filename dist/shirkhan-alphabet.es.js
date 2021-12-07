@@ -1,7 +1,8 @@
-const BOUNDARY_SYMBOL$1 = "/";
+const TRANSLATIONAL_MARK$1 = "/";
+const SEPARATE_MARK = "h";
+const SYLLABIFY_MARK = "`";
+const READABILITY_MARK = "'";
 const HEMZE = "\u0626";
-const URGHU = "`";
-const FORMATMAEK = "'";
 const table$1 = [
   {
     ug: "\u0626",
@@ -210,6 +211,13 @@ const table$1 = [
     ug: "\u0646",
     uly: "n",
     khan: "n",
+    volwes: false,
+    punctuation: false
+  },
+  {
+    ug: "\u0646",
+    uly: "n",
+    khan: "n" + SEPARATE_MARK,
     volwes: false,
     punctuation: false
   },
@@ -2180,12 +2188,12 @@ const visit = function(tree, test, visitor, reverse) {
     return visitor(node, parent ? parent.children.indexOf(node) : null, parent);
   }
 };
-const BOUNDARY_SYMBOL = "/";
+const TRANSLATIONAL_MARK = "/";
 let stopConvert = false;
 function handleBoundaryNode(node, index2, parent) {
   if (node.type !== "PunctuationNode" && node.type !== "SymbolNode")
     return;
-  if (node.value !== BOUNDARY_SYMBOL)
+  if (node.value !== TRANSLATIONAL_MARK)
     return;
   if (index2 > 0) {
     const preNode = parent.children[index2 - 1];
@@ -2267,6 +2275,16 @@ class Khan extends Base {
   constructor() {
     super(...arguments);
     __publicField$1(this, "type", "khan");
+  }
+  fromUg(uword) {
+    uword = replaceAll(uword, "\u0646\u06AF", "\u0646h\u06AF");
+    let word2 = super.fromUg(uword);
+    word2 = replaceAll(word2, "nh", "n");
+    const hemze = this.table.filter((item) => item.ug === this.hemze)[0].khan;
+    if (word2 && word2[0] === hemze) {
+      word2 = word2.slice(1, word2.length);
+    }
+    return word2;
   }
 }
 class Uly extends Base {
@@ -2561,4 +2579,4 @@ class Syllable {
 function syllableUg(word2) {
   return new Syllable().syllable(word2);
 }
-export { BOUNDARY_SYMBOL$1 as BOUNDARY_SYMBOL, Base as BaseConverter, FORMATMAEK, HEMZE, Khan as KhanConverter, URGHU, Uly as UlyConverter, isVolwes, khan2ug, khanText2ug, syllableUg, table$1 as table, ug2khan, ug2uly, Syllable as ugSyllable, uly2ug, ulyText2ug, volwes };
+export { Base as BaseConverter, HEMZE, Khan as KhanConverter, READABILITY_MARK, SEPARATE_MARK, SYLLABIFY_MARK, TRANSLATIONAL_MARK$1 as TRANSLATIONAL_MARK, Uly as UlyConverter, isVolwes, khan2ug, khanText2ug, syllableUg, table$1 as table, ug2khan, ug2uly, Syllable as ugSyllable, uly2ug, ulyText2ug, volwes };
