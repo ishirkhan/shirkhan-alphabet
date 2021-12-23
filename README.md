@@ -1,25 +1,51 @@
-<br />
-<br />
-<br />
+# shirkhan ehlipbesi
 
-# 文献
+shirkhan ehlipbesi shirkhanning turmush we khizmet iwhtiyaji vchvn yasap chiqilghan ehlipbedur.
 
-- [ئۇيغۇرچه Unicode ھەققىدە](https://web.archive.org/web/20120324181735/http://www.ukij.org/fonts/history/Unicode_FAQ.pdf)
-- [Proposal to add a Named UCS Sequence Identifier UYGHUR LETTERS](https://unicode.org/L2/L2012/12063-n4218.pdf)
-  - [Proposal 附件](/12063-n4218.pdf)
-- [Basic Arabic](http://www.unicode.org/charts/PDF/U0600.pdf)
-- [Arabic Presentation Forms-A](http://www.unicode.org/charts/PDF/UFB50.pdf)
-- [Arabic Presentation Forms-B](http://www.unicode.org/charts/PDF/UFE70.pd)
+**shirkhan ehlipbesi shirkhan teripidin yasalghan**, czining iwhtiyaji we ishlitish aditini asas qilghan ehlipbe bolup **whehchqandaq til-yehziq qaxide-pirinsiplirigha tayanmighan** we uyghun kelmesliki momkin. u pvtvnley **shekhiske wekillik qilidighan ehlipbe** bulup,shirkhanning kishilik khawhishi we czlvk pirinsipini asas qilidu.
 
----
+## pirinsip
 
-- [ئۇيغۇر يېزىقىدىكى ھەرپلەرنى لاتىن ھەرپلىرى بىلەن ئىپادىلەش لايىھىسىنى ](https://web.archive.org/web/20131201102602/http://www.xjyw.gov.cn/Web/article.aspx?ArticleID=1088)
+shirkhan ehlipbesi barliqqa kehlish we kehyinki czgvrvshlerde tcwendiki pirinsiplargha rixaye qilidu:
 
-- [UKY 校对规则](https://web.archive.org/web/20110809145526/http://ukij.org/html)
+- uyghur tilidiki 32 wherip + whemze din ibaret 33 wheripni tuluq ipadiliyelishi kehrek
+- `ASCII` diki 26 wheriptin bashqa wheriplerni cz ichige almasliqi kirek
+- wheripler birdek kichik yehzilishi kirek
+- konopka takhtisidiki bir wherip bir wheripkila wekillik qilishi, birikme wherip ikki musteqil wherip sheklide kirgvzvlishi kirek
+  > dimekchi whazirqi uyghurche kirgvzgvchlerdek bir wherip arqiliq ikki wherip ipadilenmesliki we buningdin saqlinish lazim
+- qoshma wheriplerni whasillighuchi wherip eng yakhshisi ayrim wherip bolmasliqi kirek
+- qoshma wheriplerni whasillighanda chuqum wherip tuqunushi kehlip chiqmaydighan, yaki eng az chiqidighan whaletni asas qilsh kirehk
+- wherip tuqunishi kilip chiqishtin saqlanhghili bolmighanda,tuqunushqan wheripni ayrighuchi wherip vchvn qoshma wherip whasillighuchi wheripni aldin tallash kehrek,wheriptin bashqa belgini ayrish belgisi qilishtin saqlinish kirek
+  > asasliqi `markdown` qatarliq belge arqiliq mena ipadileydighan yehziqchiliq ishliri kczde tutuldi
 
-  - [规则附件](/UKY_Heqqide_KonaYeziq_.pdf)
+## shirkhan ehlipbesidiki wheripler
 
----
+yuqardiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirkhan ehlipbesining wheripliri tcwendikilerge muqumdaldi.
 
-- [ئۇيغۇرچە 50 مىليون سۆزلۈك ئامبىرى (پېئىلنىڭ تۈرلىنىشى)
-  ](https://web.archive.org/web/20160325105637/http://www.alimahat.com/?p=1091)
+> kcrvsh we este qaldurushqa qulay bolsun vchvn uyghurche wheripler bilen birge birildi
+
+![shirkhan alphabet table](./images/shirkhan-alphabet-table.jpg)
+
+- shirkhan ehlipbeside whemze vchvn `x` wheripi ishlitilidu. mesilen: svrxet /svrxet/ , svret /svret/ qilip yehzilidu;
+- barliq suzuq tawushtin bashlanhghan sczlvklerning behshidiki whemze quyulmisimu bolidu. mesilen: ademler /ademler/ qilip yehzilidu, /xademler/ emes;
+- shirkhan ehlipbesidiki wheriplerdin **ng** wheripidin bashqilirida neziriye jewhettin tuqunush kcrvlmeydu, **ng wheripini `ng` bilen ipadiligende `n,g,ng` vch wherip arisida mena tuqunishi kehlip chiqidu**,bundaq ewhwalda /n/ bilen /g/ arisigha /h/ wheripi qushulup `nhg` qilip yehzilish arqiliq mena tuqunishi whel qilinidu. mesilen: vnhge ehlish `vnhge ehlish`, enhge ehlish `enhge elish`,bashlanhghan `bashlanhghan` dehgendek;
+- shirkhan ehlipbeside **c wheripi vchvn `c` ishlitildi**. **c** we **v** larning `c`,`v` ni tallap ishlitishi asasliqi konupka takhtisidiki wherip orni seweblik boldi;
+
+## shirkhan ehlipbesini yadro qilghan yardemchi tvrler
+
+### `shirkhan-markdown`
+
+[shirkhan-markdown](https://gitee.com/silvaq/shirkhan-vscode)
+bu tvr `vscode` kod tewhrirligvchide shirkhan ehipbesini ishilitp `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-markdown` dep izditish arqiliq qachilap ishlitishke bulidu.
+qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng
+
+### `shirkhan-retext`
+
+[shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
+bv tvr asasliqi shirkhan ehlipbeside yehzilghan tehkist mezmunini uyghurchigha aylandurush vchvn ishlitilidu.
+qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng
+
+### `shirkhan-remark`
+
+[shirkhan-remark](https://gitee.com/silvaq/shirkhan-remark)
+bv tvr asasliqi shirkhan ehlipbeside yehzilghan `markdown` ni uyghurche `markdown` gha aylandurush, uyghurche yazghan `markdown` ni shirkhan ehlipbesi asasidiki `markdown` gha aylandurush ishlirigha ishlitilidu
