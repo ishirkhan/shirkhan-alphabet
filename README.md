@@ -33,6 +33,12 @@ yuqardiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirkh
 
 ## shirkhan ehlipbesini yadro qilghan yardemchi tvrler
 
+### `shirkhan-alphabet-table`
+
+[shirkhan-alphabet-table](https://gitee.com/silvaq/shirkhan-alphabet-table)
+bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urunlirida clchem birliki whasillash vchvn teyyarlanhghan bulup,`javascript` tilini asas qilidighan tvrler aldin mushu tvrni ishlitip munasiwetlik uchurlargha ehrishishi tewissiye qilinidu
+;
+
 ### `shirkhan-markdown`
 
 [shirkhan-markdown](https://gitee.com/silvaq/shirkhan-vscode)
