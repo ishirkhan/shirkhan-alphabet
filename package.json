@@ -1,8 +1,16 @@
 {
   "name": "shirkhan-alphabet",
-  "version": "0.0.1",
-  "private": "true",
-  "files": [
-    "no-file"
-  ]
+  "version": "1.0.0",
+  "description": "用来 制定shirkhan alphabet 相关规则规矩，规范化",
+  "author": {
+    "name": "shirkhan",
+    "email": "uybabbage@hotmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/ishirkhan/shirkhan-alphabet"
+  },
+  "bugs": {
+    "url": "https://github.com/ishirkhan/shirkhan-alphabet"
+  },
+  "license": "MIT"
 }
