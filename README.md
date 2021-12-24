@@ -1,8 +1,25 @@
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/UyghurcheREADME.md)
+
 # shirkhan ehlipbesi
 
 shirkhan ehlipbesi shirkhanning turmush we khizmet iwhtiyaji vchvn yasap chiqilghan ehlipbedur.
 
 **shirkhan ehlipbesi shirkhan teripidin yasalghan**, czining iwhtiyaji we ishlitish aditini asas qilghan ehlipbe bolup **whehchqandaq til-yehziq qaxide-pirinsiplirigha tayanmighan** we uyghun kelmesliki momkin. u pvtvnley **shekhiske wekillik qilidighan ehlipbe** bulup,shirkhanning kishilik khawhishi we czlvk pirinsipini asas qilidu.
+
+## mekhset
+
+`ASCII` wheriplirini qollaydighan wherqandaq urunda cheklimisiz yehziqchiliq bilen shughullanhghili bulush
+
+## ishlitilish orni
+
+barliq ehnhgilizche 26 wheripni kirgvzgili bolidighan yumtallarda ishlitilidu.
+shirkhan asasliqi `markdown` girammatikisida yehziqchiliq bilen shughullinish vchvn ishlitidu.
+
+## mezmunning yehzilish we kcrvlvsh shekli
+
+mezmun birdek shirkhan ehlipbeside kcrsitilgen wheripler buyinche yehzilidu we shu buyunche kcrsitilidu.
+
+sharaxit yar bergen orunlarda erep yehziqi asasidiki uyghurchida mas qedemlik kcrvp turush iqtidari teminlash arqiliq mezmunning imla khataliqtin saqlinishini kapaletke ige qilishqa bolidu.
 
 ## pirinsip
 
@@ -14,22 +31,45 @@ shirkhan ehlipbesi barliqqa kehlish we kehyinki czgvrvshlerde tcwendiki pirinsip
 - konopka takhtisidiki bir wherip bir wheripkila wekillik qilishi, birikme wherip ikki musteqil wherip sheklide kirgvzvlishi kirek
   > dimekchi whazirqi uyghurche kirgvzgvchlerdek bir wherip arqiliq ikki wherip ipadilenmesliki we buningdin saqlinish lazim
 - qoshma wheriplerni whasillighuchi wherip eng yakhshisi ayrim wherip bolmasliqi kirek
-- qoshma wheriplerni whasillighanda chuqum wherip tuqunushi kehlip chiqmaydighan, yaki eng az chiqidighan whaletni asas qilsh kirehk
-- wherip tuqunishi kilip chiqishtin saqlanhghili bolmighanda,tuqunushqan wheripni ayrighuchi wherip vchvn qoshma wherip whasillighuchi wheripni aldin tallash kehrek,wheriptin bashqa belgini ayrish belgisi qilishtin saqlinish kirek
+- qoshma wheriplerni whasillighanda chuqum wherip tuqunushi kehlip chiqmaydighan, yaki eng az chiqidighan whaletni asas qilsh kirek
+- wherip tuqunishi kilip chiqishtin saqlanhghili bolmighanda, tuqunushqan wheripni ayrighuchi wherip vchvn qoshma wherip whasillighuchi wheripni aldin tallash kehrek, wheriptin bashqa belgini ayrish belgisi qilishtin saqlinish kirek!
   > asasliqi `markdown` qatarliq belge arqiliq mena ipadileydighan yehziqchiliq ishliri kczde tutuldi
 
 ## shirkhan ehlipbesidiki wheripler
 
-yuqardiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirkhan ehlipbesining wheripliri tcwendikilerge muqumdaldi.
+yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirkhan ehlipbesining wheripliri tcwendikilerge muqumdaldi:
 
 > kcrvsh we este qaldurushqa qulay bolsun vchvn uyghurche wheripler bilen birge birildi
 
-![shirkhan alphabet table](./images/shirkhan-alphabet-table.jpg)
+<!--
+![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg) -->
 
+### izawhat
+
+- `h` wheripi qoshma wherip whasillighuchi wherip qilip ishlitilidu, ayrim ishlitilse mena ipadilimeydu.
+- `h` wheripi tuqunushqan wheriplerni ayrish belgisi qilip ishlitilidu ( astidiki mezmunlargha qaralsun )
 - shirkhan ehlipbeside whemze vchvn `x` wheripi ishlitilidu. mesilen: svrxet /svrxet/ , svret /svret/ qilip yehzilidu;
 - barliq suzuq tawushtin bashlanhghan sczlvklerning behshidiki whemze quyulmisimu bolidu. mesilen: ademler /ademler/ qilip yehzilidu, /xademler/ emes;
-- shirkhan ehlipbesidiki wheriplerdin **ng** wheripidin bashqilirida neziriye jewhettin tuqunush kcrvlmeydu, **ng wheripini `ng` bilen ipadiligende `n,g,ng` vch wherip arisida mena tuqunishi kehlip chiqidu**,bundaq ewhwalda /n/ bilen /g/ arisigha /h/ wheripi qushulup `nhg` qilip yehzilish arqiliq mena tuqunishi whel qilinidu. mesilen: vnhge ehlish `vnhge ehlish`, enhge ehlish `enhge elish`,bashlanhghan `bashlanhghan` dehgendek;
+- shirkhan ehlipbesidiki wheriplerdin **ng** wheripidin bashqilirida neziriye jewhettin tuqunush kcrvlmeydu, **ng wheripini `ng` bilen ipadiligende `n,g,ng` vch wherip arisida mena tuqunishi kehlip chiqidu**,bundaq ewhwalda /n/ bilen /g/ arisigha /h/ wheripi qushulup `nhg` qilip yehzish arqiliq mena tuqunishi whel qilinidu. mesilen: vnhge ehlish `vnhge ehlish`, enhge ehlish `enhge elish`,bashlanhghan `bashlanhghan` dehgendek;
 - shirkhan ehlipbeside **c wheripi vchvn `c` ishlitildi**. **c** we **v** larning `c`,`v` ni tallap ishlitishi asasliqi konupka takhtisidiki wherip orni seweblik boldi;
+- shirkhan ehlipbesige arliship kelgen `ASCII` liq bashqa tildiki mezmunlarni periqlendvrvsh zcrvriyti bolghan urunlarda `/` belgisi arqiliq mezmunni urap yehzish arqiliq mekhsetke yehtishke bulidu. mesilen: ( shirkhan ehlipbesi `/english/` tiligha bek okhshaydiken ) dehgen jvmlide `english` sczi uyghurchigha aylandurush zcrvriyiti tughulghan urunlarda cz pehti qaldurulup aylandurushqa qatnashmaydu;
+
+## yardemchi qurallargha kcrsetme
+
+shirkhan ehlipbesi erep yehziqi asasidiki uyghur tili bilen tvptin okhshimaydighan bolghachqa yehzish we uqush jewhette qiyinchiliq tughulishi ehniq, shunglashqa yardemchi qurallar yuqarqi bir qanche tereptin tuluqlansa bolidu:
+
+- shirkhan ehlipbesi boyiche scz tewissiyelesh
+- imla tekshvrvsh we eskertish
+- qushumche rayunda mas qedemde uyghurchigha aylandurup kcrsitish
+- uyghurche `markdown` ni shirkhan ehlipbesidiki `markdown` gha aylandurush
+- shirkhan ehlipbesidiki `markdown` ni uyghurchidiki `markdown` gha aylandurush
+- `markdown` ni `html` tinich betke aylandurup bilog ishliri qatarliqlargha ishlitish
+- `markdown` ni `PDF`, resim qatarliq saqlashqa eplik shekillerge aylandurush
+- mezmun terjime qilish
+- `OCR` periqlendvrvsh
+- awazliq kirgvzvsh
+- awazni mezmunhgha aylandurush
+- ...
 
 ## shirkhan ehlipbesini yadro qilghan yardemchi tvrler
 
@@ -42,16 +82,15 @@ bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urun
 ### `shirkhan-markdown`
 
 [shirkhan-markdown](https://gitee.com/silvaq/shirkhan-vscode)
-bu tvr `vscode` kod tewhrirligvchide shirkhan ehipbesini ishilitp `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-markdown` dep izditish arqiliq qachilap ishlitishke bulidu.
-qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng
+bu tvr `vscode` kod tewhrirligvchide shirkhan ehlipbesini ishlitip `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-markdown` dep izditish arqiliq qachilap ishlitishke bulidu.
+qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng;
 
 ### `shirkhan-retext`
 
 [shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
-bv tvr asasliqi shirkhan ehlipbeside yehzilghan tehkist mezmunini uyghurchigha aylandurush vchvn ishlitilidu.
-qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng
+bv tvr asasliqi tehkist mezmunini uyghurche we shirkhan ehlipbesi arisida aylandurushqa ishlitilidu;
 
 ### `shirkhan-remark`
 
 [shirkhan-remark](https://gitee.com/silvaq/shirkhan-remark)
-bv tvr asasliqi shirkhan ehlipbeside yehzilghan `markdown` ni uyghurche `markdown` gha aylandurush, uyghurche yazghan `markdown` ni shirkhan ehlipbesi asasidiki `markdown` gha aylandurush ishlirigha ishlitilidu
+bv tvr asasliqi `markdown` mezmunini shirkhan ehlipbesi we uyghurche arisida cz - ara aylandurush vchvn ishlitilidu;
