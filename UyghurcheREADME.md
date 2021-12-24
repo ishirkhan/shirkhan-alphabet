@@ -41,8 +41,7 @@
 
 > كۆرۈش ۋە ئەستە قالدۇرۇشقا قۇلاي بولسۇن ئۈچۈن ئۇيغۇرچە ھەرىپلەر بىلەن بىرگە بىرىلدى
 
-<!--
-![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg) -->
+![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
 ### ئىزاھات
 

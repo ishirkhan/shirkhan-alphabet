@@ -41,8 +41,7 @@ yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirk
 
 > kcrvsh we este qaldurushqa qulay bolsun vchvn uyghurche wheripler bilen birge birildi
 
-<!--
-![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg) -->
+![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
 ### izawhat
 
