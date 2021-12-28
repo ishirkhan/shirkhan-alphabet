@@ -11,6 +11,9 @@
     "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && yarn changeissueurl",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && yarn changeissueurl",
     "release": "./scripts/release.sh",
+    "release:minor": "yarn release -r minor",
+    "release:major": "yarn release -r major",
+    "release:patch": "yarn release -r patch",
     "changeissueurl": "replace 'https://github.com/ishirkhan/shirkhan-vscode/commit/' 'https://gitee.com/silvaq/shirkhan-vscode/commit/'"
   },
   "repository": {

@@ -6,14 +6,14 @@ while [[ "$#" > 0 ]]; do case $1 in
   *) echo "Unknown parameter passed: $1"; exit 1;;
 esac; shift; done
 
-# Default as minor, the argument major, minor or patch: 
+# Default as minor, the argument major, minor or patch:
 if [ -z "$release" ]; then
     release="minor";
 fi
 
-# Default release branch is master 
+# Default release branch is master
 if [ -z "$branch" ] ; then
-    branch="master"; 
+    branch="master";
 fi;
 
 
