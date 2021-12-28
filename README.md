@@ -49,7 +49,11 @@ yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirk
 - `h` wheripi tuqunushqan wheriplerni ayrish belgisi qilip ishlitilidu ( astidiki mezmunlargha qaralsun )
 - shirkhan ehlipbeside whemze vchvn `x` wheripi ishlitilidu. mesilen: svrxet /svrxet/ , svret /svret/ qilip yehzilidu;
 - barliq suzuq tawushtin bashlanhghan sczlvklerning behshidiki whemze quyulmisimu bolidu. mesilen: ademler /ademler/ qilip yehzilidu, /xademler/ emes;
-- shirkhan ehlipbesidiki wheriplerdin **ng** wheripidin bashqilirida neziriye jewhettin tuqunush kcrvlmeydu, **ng wheripini `ng` bilen ipadiligende `n,g,ng` vch wherip arisida mena tuqunishi kehlip chiqidu**,bundaq ewhwalda /n/ bilen /g/ arisigha /h/ wheripi qushulup `nhg` qilip yehzish arqiliq mena tuqunishi whel qilinidu. mesilen: vnhge ehlish `vnhge ehlish`, enhge ehlish `enhge elish`,bashlanhghan `bashlanhghan` dehgendek;
+- shirkhan ehlipbesidiki wheriplerdin **ng** wheripidin bashqilirida neziriye jewhettin tuqunush kcrvlmeydu, **ng wheripini `ng` bilen ipadiligende `n,g,ng` vch wherip arisida mena tuqunishi kehlip chiqidu**,bundaq ewhwalda /n/ bilen /g/ arisigha /h/ wheripi qushulup `nhg` qilip yehzish arqiliq mena tuqunishi whel qilinidu. mesilen: vnhge ehlish `vnhge ehlish`,enhge ehlish `enhge ehlish` dehgendek;
+
+  > **eskertish:** `n`,`gh` arisida tuqunush kcrvlgende `ngh` sheklide cz ipadisini tapidu,`ngh` birikmisi `h` wheripi ayrim mena ipadilimigenliktin chuqum `n+gh`ni ipadiligenliktin kilip chiqidu, shunglashqa bundaq alawhide ewhwalda `h` belgisi arqiliq ayrip yehzilmisimu bulidu;
+  > barliq logikiliq bir terep qilish pirogrammiliri yuqarqi qanuniyet buyiche aptumatik bir terep qilishi kirek, shundaqla `h` qushup yehzilghan ewhwalnimu toghra bir terep qilalishi kirek ,mesilen tcwendikidek yehzishning wher ikkilisi toghra: bashlanghan `bashla+n`+`gh+an`,bashlanhghan ` bashla+n`+`h`+`gh+an` ;
+
 - shirkhan ehlipbeside **c wheripi vchvn `c` ishlitildi**. **c** we **v** larning `c`,`v` ni tallap ishlitishi asasliqi konupka takhtisidiki wherip orni seweblik boldi;
 - shirkhan ehlipbesige arliship kelgen `ASCII` liq bashqa tildiki mezmunlarni periqlendvrvsh zcrvriyti bolghan urunlarda `/` belgisi arqiliq mezmunni urap yehzish arqiliq mekhsetke yehtishke bulidu. mesilen: ( shirkhan ehlipbesi `/english/` tiligha bek okhshaydiken ) dehgen jvmlide `english` sczi uyghurchigha aylandurush zcrvriyiti tughulghan urunlarda cz pehti qaldurulup aylandurushqa qatnashmaydu;
 
