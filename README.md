@@ -6,9 +6,9 @@ shirkhan ehlipbesi shirkhanning turmush we khizmet iwhtiyaji vchvn yasap chiqilg
 
 **shirkhan ehlipbesi shirkhan teripidin yasalghan**, czining iwhtiyaji we ishlitish aditini asas qilghan ehlipbe bolup **whehchqandaq til-yehziq qaxide-pirinsiplirigha tayanmighan** we uyghun kelmesliki momkin. u pvtvnley **shekhiske wekillik qilidighan ehlipbe** bulup,shirkhanning kishilik khawhishi we czlvk pirinsipini asas qilidu.
 
-## mekhset
+## meqset
 
-`ASCII` wheriplirini qollaydighan wherqandaq urunda cheklimisiz yehziqchiliq bilen shughullanhghili bulush
+`ASCII` wheriplirini qollaydighan wherqandaq urunda cheklimisiz yehziqchiliq bilen shughullanhghili bolush
 
 ## ishlitilish orni
 
@@ -19,7 +19,7 @@ shirkhan asasliqi `markdown` girammatikisida yehziqchiliq bilen shughullinish vc
 
 mezmun birdek shirkhan ehlipbeside kcrsitilgen wheripler buyinche yehzilidu we shu buyunche kcrsitilidu.
 
-sharaxit yar bergen orunlarda erep yehziqi asasidiki uyghurchida mas qedemlik kcrvp turush iqtidari teminlash arqiliq mezmunning imla khataliqtin saqlinishini kapaletke ige qilishqa bolidu.
+sharaxit yar bergen urunlarda erep yehziqi asasidiki uyghurchida mas qedemlik kcrvp turush iqtidari teminlash arqiliq mezmunning imla khataliqtin saqlinishini kapaletke ige qilishqa bolidu.
 
 ## pirinsip
 
@@ -82,11 +82,16 @@ shirkhan ehlipbesi erep yehziqi asasidiki uyghur tili bilen tvptin okhshimaydigh
 bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urunlirida clchem birliki whasillash vchvn teyyarlanhghan bulup,`javascript` tilini asas qilidighan tvrler aldin mushu tvrni ishlitip munasiwetlik uchurlargha ehrishishi tewissiye qilinidu
 ;
 
-### `shirkhan-markdown`
+### `shirkhan-vscode`
 
-[shirkhan-markdown](https://gitee.com/silvaq/shirkhan-vscode)
-bu tvr `vscode` kod tewhrirligvchide shirkhan ehlipbesini ishlitip `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-markdown` dep izditish arqiliq qachilap ishlitishke bulidu.
+[shirkhan-vscode](https://gitee.com/silvaq/shirkhan-vscode)
+bu tvr `vscode` kod tewhrirligvchide shirkhan ehlipbesini ishlitip `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-vscode` dep izditish arqiliq qachilap ishlitishke bulidu.
 qisturmining tehkhimu kcp uchuri vchvn mezkur tvr ambirini kcrvng;
+
+### `shirkhan-crx`
+
+[shirkhan-crx](https://gitee.com/silvaq/shirkhan-crx)
+bu tvr asasliqi torkcrgvch qisturmisi bolup, torkcrgvchlerde shirkhan ehlipbeside yehzilghan mezmunlarni uyghurchigha aylandurup kcrsitish qatarliq muwhim iwhtiyajlarni qandurush vchvn ishlitilidu
 
 ### `shirkhan-retext`
 
