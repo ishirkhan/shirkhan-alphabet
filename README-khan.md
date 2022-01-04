@@ -37,13 +37,26 @@ shirkhan ehlipbesi barliqqa kehlish we kehyinki czgvrvshlerde tcwendiki pirinsip
 
 ## shirkhan ehlipbesidiki wheripler
 
+shirkhan ehlipbesi yehzishqa eplik (`shirkhan`) we uqushqa eplik (`shirkhan-uz`) din ibaret ikki qisimgha bclvnidu.
+
+> - yehziqchiliq bilen shughullanghanda **yehzishqa eplip** wherip jediwili asasida yehzish lazim
+> - eger kirgvzvsh sharaxit yar bergen ewhwalda **uqushqa eplik** wherip jediwilide yehzishqa bolidu.
+> - nawhayti ehniq bulush kehrekki ikkisini arlashturup yehzishqa bolmaydu.
+
+- yehzishqa eplik nusqisida `ASCII` diki 26 wheriplerla bolghan bolidu; bu pirinsip qoshma wheriplernimu cz ichige alidu
+- oqushqa eplik nusqisidiki wheripler yehzishqa eplik nusqisining elalashturulghan shekli bulup, yehzishqa eplip wherip jediwilidiki tuqunishidighan,oqushqa qulaysizliq peyda qilidighan wheriplerni bashqa oqushqa qulay wheriplerge almashturup,uqush we chvshinish kvchiqini ashurushqa ishlitidighan wherip jediwehlini kcrsitidu.
+
+-
+
+### yehzishqa eplik wherip jediwili
+
 yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirkhan ehlipbesining wheripliri tcwendikilerge muqumdaldi:
 
 > kcrvsh we este qaldurushqa qulay bolsun vchvn uyghurche wheripler bilen birge birildi
 
 ![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
-### izawhat
+#### izawhat
 
 - `h` wheripi qoshma wherip whasillighuchi wherip qilip ishlitilidu, ayrim ishlitilse mena ipadilimeydu.
 - `h` wheripi tuqunushqan wheriplerni ayrish belgisi qilip ishlitilidu ( astidiki mezmunlargha qaralsun )
@@ -56,6 +69,17 @@ yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirk
 
 - shirkhan ehlipbeside **c wheripi vchvn `c` ishlitildi**. **c** we **v** larning `c`,`v` ni tallap ishlitishi asasliqi konupka takhtisidiki wherip orni seweblik boldi;
 - shirkhan ehlipbesige arliship kelgen `ASCII` liq bashqa tildiki mezmunlarni periqlendvrvsh zcrvriyti bolghan urunlarda `/` belgisi arqiliq mezmunni urap yehzish arqiliq mekhsetke yehtishke bulidu. mesilen: ( shirkhan ehlipbesi `/english/` tiligha bek okhshaydiken ) dehgen jvmlide `english` sczi uyghurchigha aylandurush zcrvriyiti tughulghan urunlarda cz pehti qaldurulup aylandurushqa qatnashmaydu;
+
+### uqushqa eplik wherip jediwili
+
+> bu jediwelge **shirkhan uz** yeni `shirkhan-uz` jediwili dep nam birildi
+
+shirkhan uz jediwili shirkhan jediwilidiki yuqarqi wheriplerge qarita czgertish kirgvzdi:
+
+- `wh` yeni "wh" wheripi vchvn `ĥ` wheripi tallandi
+- `eh` yeni "eh" wheripi vchvn `ê` wheripi tallandi
+- `c` yeni "c" wheripi vchvn `ô` wheripi tallandi
+- `ng` yeni "ng" wheripi vchvn `ñ` wheripi tallandi
 
 ## yardemchi qurallargha kcrsetme
 

@@ -1,4 +1,4 @@
-[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/README-ug.md)
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/UyghurcheREADME.md)
 
 # shirkhan êlipbesi
 
@@ -37,13 +37,27 @@ shirkhan êlipbesi barliqqa kêlish we kêyinki ôzgvrvshlerde tôwendiki pirins
 
 ## shirkhan êlipbesidiki ĥeripler
 
+shirkhan êlipbesi yêzishqa eplik (`shirkhan`) we uqushqa eplik (`shirkhan-uz`) din ibaret ikki qisimgha bôlvnidu.
+
+> - yêziqchiliq bilen shughullanghanda **yêzishqa eplip** ĥerip jediwili asasida yêzish lazim
+> - eger kirgvzvsh sharaxit yar bergen eĥwalda **uqushqa eplik** ĥerip jediwilide yêzishqa bolidu.
+> - naĥayti êniq bulush kêrekki ikkisini arlashturup yêzishqa bolmaydu.
+
+- yêzishqa eplik nusqisida `ASCII` diki 26 ĥeriplerla bolghan bolidu; bu pirinsip qoshma ĥeriplernimu ôz ichige alidu
+
+- oqushqa eplik nusqisidiki ĥeripler yêzishqa eplik nusqisiniñ elalashturulghan shekli bulup, yêzishqa eplip ĥerip jediwilidiki tuqunishidighan,oqushqa qulaysizliq peyda qilidighan ĥeriplerni bashqa oqushqa qulay ĥeriplerge almashturup,uqush we chvshinish kvchiqini ashurushqa ishlitidighan ĥerip jediwêlini kôrsitidu.
+
+-
+
+### yêzishqa eplik ĥerip jediwili
+
 yuqiridiki pirinsip qismida kôrsitilgen mezmunlargha rixaye qilghan asasta shirkhan êlipbesiniñ ĥeripliri tôwendikilerge muqumdaldi:
 
 > kôrvsh we este qaldurushqa qulay bolsun vchvn uyghurche ĥeripler bilen birge birildi
 
 ![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
-### izaĥat
+#### izaĥat
 
 - `h` ĥeripi qoshma ĥerip ĥasillighuchi ĥerip qilip ishlitilidu, ayrim ishlitilse mena ipadilimeydu.
 
@@ -61,6 +75,17 @@ yuqiridiki pirinsip qismida kôrsitilgen mezmunlargha rixaye qilghan asasta shir
 - shirkhan êlipbeside **ô ĥeripi vchvn `c` ishlitildi**. **ô** we **v** larniñ `c`,`v` ni tallap ishlitishi asasliqi konupka takhtisidiki ĥerip orni seweblik boldi;
 
 - shirkhan êlipbesige arliship kelgen `ASCII` liq bashqa tildiki mezmunlarni periqlendvrvsh zôrvriyti bolghan urunlarda `/` belgisi arqiliq mezmunni urap yêzish arqiliq mekhsetke yêtishke bulidu. mesilen: ( shirkhan êlipbesi `/english/` tiligha bek okhshaydiken ) dêgen jvmlide `english` sôzi uyghurchigha aylandurush zôrvriyiti tughulghan urunlarda ôz pêti qaldurulup aylandurushqa qatnashmaydu;
+
+### uqushqa eplik ĥerip jediwili
+
+> bu jediwelge **shirkhan uz** yeni `shirkhan-uz` jediwili dep nam birildi
+
+shirkhan uz jediwili shirkhan jediwilidiki yuqarqi ĥeriplerge qarita ôzgertish kirgvzdi:
+
+- `wh` yeni "ĥ" ĥeripi vchvn `ĥ` ĥeripi tallandi
+- `eh` yeni "ê" ĥeripi vchvn `ê` ĥeripi tallandi
+- `c` yeni "ô" ĥeripi vchvn `ô` ĥeripi tallandi
+- `ng` yeni "ñ" ĥeripi vchvn `ñ` ĥeripi tallandi
 
 ## yardemchi qurallargha kôrsetme
 
