@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.0.1...v1.1.0) (2022-01-04)
+
+
+### Features
+
+* 发布版本script更新 ([ef2ff73](https://github.com/ishirkhan/shirkhan-alphabet/commit/ef2ff73bb1ab1e45a61ee35f57c7242cf852e71a))
+* 新增易读易写相关的规范,补充了shirkhan-uz的基础替换字符 ([b1c488e](https://github.com/ishirkhan/shirkhan-alphabet/commit/b1c488ecc655b58d52e479b025701a087be2a087))
+
 ### 1.0.1 (2021-12-28)
 
 
