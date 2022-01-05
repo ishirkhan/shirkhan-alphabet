@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.1.1...v1.2.0) (2022-01-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* 字符c,zh 换成oh,jh,同时khan-uz的 kh改成ħ
+
+### Features
+
+* 字符c,zh 换成oh,jh,同时khan-uz的 kh改成ħ ([394d249](https://github.com/ishirkhan/shirkhan-alphabet/commit/394d24958136d7c93a188602dee692963bd8b904))
+
 ### [1.1.1](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.1.0...v1.1.1) (2022-01-05)
 
 
