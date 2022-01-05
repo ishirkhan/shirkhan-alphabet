@@ -1,4 +1,4 @@
-[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/UyghurcheREADME.md)
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/README-ug.md)
 
 # shirkhan ehlipbesi
 
@@ -76,10 +76,15 @@ yuqiridiki pirinsip qismida kcrsitilgen mezmunlargha rixaye qilghan asasta shirk
 
 shirkhan uz jediwili shirkhan jediwilidiki yuqarqi wheriplerge qarita czgertish kirgvzdi:
 
+- `c` yeni "c" wheripi vchvn `ô` wheripi tallandi
 - `wh` yeni "wh" wheripi vchvn `ĥ` wheripi tallandi
 - `eh` yeni "eh" wheripi vchvn `ê` wheripi tallandi
-- `c` yeni "c" wheripi vchvn `ô` wheripi tallandi
 - `ng` yeni "ng" wheripi vchvn `ñ` wheripi tallandi
+- `ch` yeni "ch" wheripi vchvn `ĉ` wheripi tallandi
+- `kh` yeni "kh" wheripi vchvn `h` wheripi tallandi
+- `zh` yeni "zh" wheripi vchvn `ž` wheripi tallandi
+- `sh` yeni "sh" wheripi vchvn `ŝ` wheripi tallandi
+- `gh` yeni "gh" wheripi vchvn `ĝ` wheripi tallandi
 
 ## yardemchi qurallargha kcrsetme
 
