@@ -17,7 +17,7 @@ barliq êngilizĉe 26 ĥeripni kirgvzgili bolidiĝan yumtallarda iŝlitilidu.
 
 ## mezmunniñ yêziliŝ we kôrvlvŝ ŝekli
 
-mezmun birdek ŝirħan êlipbeside kôrsitilgen ĥeripler buyinĉe yêzilidu we ŝu buyunĉe kôrsitilidu.
+mezmun birdek ŝirħan êlipbeside kôrsitilgen ĥeripler buyiĉe yêzilidu we ŝu buyiĉe kôrsitilidu.
 
 ŝaraxit yar bergen urunlarda erep yêziqi asasidiki uyĝurĉida mas qedemlik kôrvp turuŝ iqtidari teminlaŝ arqiliq mezmunniñ imla ħataliqtin saqliniŝini kapaletke ige qiliŝqa bolidu.
 
@@ -30,26 +30,12 @@ mezmun birdek ŝirħan êlipbeside kôrsitilgen ĥeripler buyinĉe yêzilidu we 
 - ĥeripler birdek kiĉik yêziliŝi kirek
 - konopka taħtisidiki bir ĥerip bir ĥeripkila wekillik qiliŝi, birikme ĥerip ikki musteqil ĥerip ŝeklide kirgvzvliŝi kirek
   > dimekĉi ĥazirqi uyĝurĉe kirgvzgvĉlerdek bir ĥerip arqiliq ikki ĥerip ipadilenmesliki we buniñdin saqliniŝ lazim
-- qoŝma ĥeriplerni ĥasilliĝuĉi ĥerip eñ yaħŝisi ayrim ĥerip bolmasliqi kirek
+- qoŝma ĥeriplerni ĥasilliĝuĉi ĥerip eñ yaħŝisi ayrim mena ipadilimesliki kirek
 - qoŝma ĥeriplerni ĥasilliĝanda ĉuqum ĥerip tuqunuŝi kêlip ĉiqmaydiĝan, yaki eñ az ĉiqidiĝan ĥaletni asas qilŝ kirek
 - ĥerip tuquniŝi kilip ĉiqiŝtin saqlanĝili bolmiĝanda, tuqunuŝqan ĥeripni ayriĝuĉi ĥerip vĉvn qoŝma ĥerip ĥasilliĝuĉi ĥeripni aldin tallaŝ kêrek, ĥeriptin baŝqa belgini ayriŝ belgisi qiliŝtin saqliniŝ kirek!
   > asasliqi `markdown` qatarliq belge arqiliq mena ipadileydiĝan yêziqĉiliq iŝliri kôzde tutuldi
 
 ## ŝirħan êlipbesidiki ĥeripler
-
-ŝirħan êlipbesi yêziŝqa eplik (`shirkhan`) we uquŝqa eplik (`shirkhan-uz`) din ibaret ikki qisimĝa bôlvnidu.
-
-> - yêziqĉiliq bilen ŝuĝullanĝanda **yêziŝqa eplip** ĥerip jediwili asasida yêziŝ lazim
-> - eger kirgvzvŝ ŝaraxit yar bergen eĥwalda **uquŝqa eplik** ĥerip jediwilide yêziŝqa bolidu.
-> - naĥayti êniq buluŝ kêrekki ikkisini arlaŝturup yêziŝqa bolmaydu.
-
-- yêziŝqa eplik nusqisida `ASCII` diki 26 ĥeriplerla bolĝan bolidu; bu pirinsip qoŝma ĥeriplernimu ôz iĉige alidu
-
-- oquŝqa eplik nusqisidiki ĥeripler yêziŝqa eplik nusqisiniñ elalaŝturulĝan ŝekli bulup, yêziŝqa eplip ĥerip jediwilidiki tuquniŝidiĝan,oquŝqa qulaysizliq peyda qilidiĝan ĥeriplerni baŝqa oquŝqa qulay ĥeriplerge almaŝturup,uquŝ we ĉvŝiniŝ kvĉiqini aŝuruŝqa iŝlitidiĝan ĥerip jediwêlini kôrsitidu.
-
--
-
-### yêziŝqa eplik ĥerip jediwili
 
 yuqiridiki pirinsip qismida kôrsitilgen mezmunlarĝa rixaye qilĝan asasta ŝirħan êlipbesiniñ ĥeripliri tôwendikilerge muqumdaldi:
 
@@ -57,15 +43,33 @@ yuqiridiki pirinsip qismida kôrsitilgen mezmunlarĝa rixaye qilĝan asasta ŝir
 
 ![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
-#### izaĥat
+### izaĥat
+
+- ŝirħan êlipbeside **ĥemze** vĉvn `x` ĥeripi iŝlitilidu. mesilen: svrxet /svrxet/ , svret /svret/ qilip yêzilidu;
 
 - `h` ĥeripi qoŝma ĥerip ĥasilliĝuĉi ĥerip qilip iŝlitilidu, ayrim iŝlitilse mena ipadilimeydu.
 
-- `h` ĥeripi tuqunuŝqan ĥeriplerni ayriŝ belgisi qilip iŝlitilidu ( astidiki mezmunlarĝa qaralsun )
+- barliq qalpaqliq ĥeripler kirgvzvŝke ŝaraxit bolmiĝanda birinji ĥeripke `h` ĥeripini quŝuŝ arqiliq ipadilinidu, mesilen: ŝirħan yeni `ŝirħan` ni `sh+ir+kh+an` qilip yêziŝ kirek.
 
-- ŝirħan êlipbeside ĥemze vĉvn `x` ĥeripi iŝlitilidu. mesilen: svrxet /svrxet/ , svret /svret/ qilip yêzilidu;
+  - **ħ we ĥ ĥeripliri** `h` bolup kelse oquŝqa qulayliq bolĝanliqi vĉvn bu ikki ĥeripke `h` niñ ŝekildaŝ ĥeripi iŝlitildi, yeni: ħ vĉvn `ħ`, ĥ vĉvn `ĥ`
+  - ñ ĥeripi yeni `ng` ĥeripi `h` bilen birikmigeĉke yuqarqi qaxidige mas kelmeydu,ñ vĉvn `ñ` ĥeripi tallandi
+  - ĵ ĥeripini `zh` arqiliq ipadiligende `z` niñ qaxidige uyĝun qalpaqliq ŝekli bolmiĝaĉqa we `j` niñ qalpaqliq ŝekli oquĝanda ĵ ĥeripige têħimu yêqin kelgeĉke `zh` tin `jh` ke ôzgerdi,ŝundaqla `ĵ` qilip tallandi
+
+- qoŝma ĥeriplerniñ uquŝqa qulay bir ĥeriplik ŝekli teminlinidu.
+
+  - `oh` yeni "ô" ĥeripi vĉvn `ô` ĥeripi tallandi
+  - `eh` yeni "ê" ĥeripi vĉvn `ê` ĥeripi tallandi
+  - `wh` yeni "ĥ" ĥeripi vĉvn `ĥ` ĥeripi tallandi
+  - `ch` yeni "ĉ" ĥeripi vĉvn `ĉ` ĥeripi tallandi
+  - `jh` yeni "ĵ" ĥeripi vĉvn `ĵ` ĥeripi tallandi
+  - `sh` yeni "ŝ" ĥeripi vĉvn `ŝ` ĥeripi tallandi
+  - `kh` yeni "ħ" ĥeripi vĉvn `ħ` ĥeripi tallandi
+  - `gh` yeni "ĝ" ĥeripi vĉvn `ĝ` ĥeripi tallandi
+  - `ng` yeni "ñ" ĥeripi vĉvn `ñ` ĥeripi tallandi
 
 - barliq suzuq tawuŝtin baŝlanĝan sôzlvklerniñ bêŝidiki ĥemze quyulmisimu bolidu. mesilen: ademler /ademler/ qilip yêzilidu, /xademler/ emes;
+
+- `h` ĥeripi tuqunuŝqan ĥeriplerni ayriŝ belgisi qilip iŝlitilidu ( astidiki mezmunlarĝa qaralsun )
 
 - ŝirħan êlipbesidiki ĥeriplerdin **ñ** ĥeripidin baŝqilirida neziriye jeĥettin tuqunuŝ kôrvlmeydu, **ñ ĥeripini `ng` bilen ipadiligende `n,g,ng` vĉ ĥerip arisida mena tuquniŝi kêlip ĉiqidu**,bundaq eĥwalda /n/ bilen /g/ arisiĝa /h/ ĥeripi quŝulup `nhg` qilip yêziŝ arqiliq mena tuquniŝi ĥel qilinidu. mesilen: vnge êliŝ `vnhge ehlish`,enge êliŝ `enhge ehlish` dêgendek;
 
@@ -74,21 +78,7 @@ yuqiridiki pirinsip qismida kôrsitilgen mezmunlarĝa rixaye qilĝan asasta ŝir
 
 - ŝirħan êlipbesige arliŝip kelgen `ASCII` liq baŝqa tildiki mezmunlarni periqlendvrvŝ zôrvriyti bolĝan urunlarda `/` belgisi arqiliq mezmunni urap yêziŝ arqiliq meħsetke yêtiŝke bulidu. mesilen: ( ŝirħan êlipbesi `/english/` tiliĝa bek oħŝaydiken ) dêgen jvmlide `english` sôzi uyĝurĉiĝa aylanduruŝ zôrvriyiti tuĝulĝan urunlarda ôz pêti qaldurulup aylanduruŝqa qatnaŝmaydu;
 
-### uquŝqa eplik ĥerip jediwili
-
-> bu jediwelge **ŝirħan uz** yeni `shirkhan-uz` jediwili dep nam birildi
-
-ŝirħan uz jediwili ŝirħan jediwilidiki yuqarqi ĥeriplerge qarita ôzgertiŝ kirgvzdi:
-
-- `oh` yeni "ô" ĥeripi vĉvn `ô` ĥeripi tallandi
-- `eh` yeni "ê" ĥeripi vĉvn `ê` ĥeripi tallandi
-- `wh` yeni "ĥ" ĥeripi vĉvn `ĥ` ĥeripi tallandi
-- `ch` yeni "ĉ" ĥeripi vĉvn `ĉ` ĥeripi tallandi
-- `jh` yeni "ĵ" ĥeripi vĉvn `ĵ` ĥeripi tallandi
-- `sh` yeni "ŝ" ĥeripi vĉvn `ŝ` ĥeripi tallandi
-- `kh` yeni "ħ" ĥeripi vĉvn `ħ` ĥeripi tallandi
-- `gh` yeni "ĝ" ĥeripi vĉvn `ĝ` ĥeripi tallandi
-- `ng` yeni "ñ" ĥeripi vĉvn `ñ` ĥeripi tallandi
+- yêziqĉiliq iŝlirida izĉil qoŝma ĥerip pirinsipliriĝa rixaye qilip yêziliŝi kêrek, undaq bolmiĝanda ĥerip tuquniŝi arzuyimizdikidek toĝra ĥel bolmaydude mezmunniñ imla ħataliqini keltvrvp ĉiqiridu.
 
 ## yardemĉi qurallarĝa kôrsetme
 
@@ -107,7 +97,7 @@ yuqiridiki pirinsip qismida kôrsitilgen mezmunlarĝa rixaye qilĝan asasta ŝir
 - awazni mezmunĝa aylanduruŝ
 - ...
 
-## ŝirħan êlipbesini yadro qilĝan yardemĉi tvrler
+## yardemĉi tvrler
 
 ### `shirkhan-alphabet-table`
 
