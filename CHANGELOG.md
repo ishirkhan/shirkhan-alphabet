@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.1.0...v1.1.1) (2022-01-05)
+
+
+### Features
+
+* khan-uz 新增 ch,kh,zh,sh,gh 五个字符的易读字符 ([89ecb48](https://github.com/ishirkhan/shirkhan-alphabet/commit/89ecb485cbf405dc0889e578029d31d72eaf4dc1))
+
 ## [1.1.0](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.0.1...v1.1.0) (2022-01-04)
 
 
