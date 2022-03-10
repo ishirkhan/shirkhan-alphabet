@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.2.0...v1.2.1) (2022-03-10)
+
+
+### Features
+
+* 去掉所有字符统一小写规则,现在支持大小写 ([e17da7a](https://github.com/ishirkhan/shirkhan-alphabet/commit/e17da7ae3c04a9f02ba2fa80adb150436281b280))
+* 新增大小写规则,khan和khan-uz混写时的注意事项及规范 ([d2382fd](https://github.com/ishirkhan/shirkhan-alphabet/commit/d2382fdda16941f849a15f700ff4326f9527ac09))
+
 ## [1.2.0](https://github.com/ishirkhan/shirkhan-alphabet/compare/v1.1.1...v1.2.0) (2022-01-05)
 
 
