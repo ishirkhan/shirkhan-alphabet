@@ -27,7 +27,6 @@ shirkhan ehlipbesi barliqqa kehlish we kehyinki ohzgvrvshlerde tohwendiki pirins
 
 - uyghur tilidiki 32 wherip + whemze din ibaret 33 wheripni tuluq ipadiliyelishi kehrek
 - `ASCII` diki 26 wheriptin bashqa wheriplerni ohz ichige almasliqi kirek
-- wheripler birdek kichik yehzilishi kirek
 - konopka takhtisidiki bir wherip bir wheripkila wekillik qilishi, birikme wherip ikki musteqil wherip sheklide kirgvzvlishi kirek
   > dimekchi whazirqi uyghurche kirgvzgvchlerdek bir wherip arqiliq ikki wherip ipadilenmesliki we buningdin saqlinish lazim
 - qoshma wheriplerni whasillighuchi wherip eng yakhshisi ayrim mena ipadilimesliki kirek
