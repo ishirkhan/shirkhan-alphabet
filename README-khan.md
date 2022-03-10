@@ -39,7 +39,15 @@ shirkhan ehlipbesi barliqqa kehlish we kehyinki ohzgvrvshlerde tohwendiki pirins
 
 yuqiridiki pirinsip qismida kohrsitilgen mezmunlargha rixaye qilghan asasta shirkhan ehlipbesining wheripliri tohwendikilerge muqumdaldi:
 
+> shirkhan ehlipbesi khan `khan` we khan uz `khan-uz` din ibaret ikki khil gha ayrildi.
+>
+> - `khan` mekhsus yeziqchiliqqa ishlitilip yehzish tes bolush mesilisini whel qilish vchvn ishlitilidu.
+> - `khan-uz` mekhsus uqushqa eplik bolush vchvn ishlitilidu.
+
 > kohrvsh we este qaldurushqa qulay bolsun vchvn uyghurche wheripler bilen birge birildi
+
+> ehlipbening sol terep yuquri qismidiki wheripler `khan-uz` wheripliri dep atilidu. `khan` wheripliri asasida yehzip tamamlanghan yazmilar uyghurche sheklide ishlitish epsiz, `RTL` ni qollimaydighan urunlar vchvn ishlitilidu.
+> `khan` wheripliri asasidiki mezmunlarni uqush istitik tuyghusi kohngvldikidek bolmighachqa `khan-uz` wheripliri barliqqa keldi. `khan` han wheripliridiki ikki wherip birikip bir uyghurche wherip ipadilash azaytildi.
 
 ![](https://shirkhan-alphabet.oss-cn-beijing.aliyuncs.com/shirkhan-alphabet/shirkhan-alphabet-table.jpg)
 
@@ -76,6 +84,21 @@ yuqiridiki pirinsip qismida kohrsitilgen mezmunlargha rixaye qilghan asasta shir
 - shirkhan ehlipbesige arliship kelgen `ASCII` liq bashqa tildiki mezmunlarni periqlendvrvsh zohrvriyti bolghan urunlarda `/` belgisi arqiliq mezmunni urap yehzish arqiliq mekhsetke yehtishke bulidu. mesilen: ( shirkhan ehlipbesi `/english/` tiligha bek okhshaydiken ) dehgen jvmlide `english` sohzi uyghurchigha aylandurush zohrvriyiti tughulghan urunlarda ohz pehti qaldurulup aylandurushqa qatnashmaydu;
 - yehziqchiliq ishlirida izchil qoshma wherip pirinsiplirigha rixaye qilip yehzilishi kehrek, undaq bolmighanda wherip tuqunishi arzuyimizdikidek toghra whel bolmaydude mezmunning imla khataliqini keltvrvp chiqiridu.
 
+> **eskertish:**
+>
+> shirkhan ehlipbesining `V1.2.1` neshiridin bashlap `khan`,`khan-uz` arlash yehziqchiliq bilen shughullinishqa bolidu.
+>
+> khan we khan uz arlash yehziqchiliqi jeryanida khan wheripliridin `ng` ng ni ipadileydu, khan uz wheripliride bolsa `ng=n+g` => n + g ni ipadileydu.shu sewebtin khan uz da yazghan mezmunlar asasida yeziqchiliqni dawam qilghanda (yeni khan wheripliri bilen dawamliq mezmun qoshqanda) mezmunning akhirqi netijiside khataliq chiqidu.
+>
+> yuqardiki amilni kohzde tutup, arlash yehzishni ishqa ashurush vchvn barliq mezmunlar `khan-uz` gha aylanghanda `n+g` whalitidiki mezmunlar `n + 0x200d +g` qilip almashturilishi, shundaqla mezmun `khan-uz` din bashqa whaletlerge yanghanda `n + 0x200d` diki `0x200d` alawhide birterep qilinishi lazim .mesilen
+> `khan => khan-uz` diki `nhg => n 0x200d g` gha ohzgvreydu. tetvrsiche bolghanda ewhwal qarmu-qarshi bulidu.
+
+- `khan` chong-kichik yehzishni qollaydu. aylandurush qaxidisi tohwendikiche:
+  - `Sh => S`
+  - `SH => S`
+  - `sH => s`
+  - `sh => s`
+
 ## yardemchi qurallargha kohrsetme
 
 shirkhan ehlipbesi erep yehziqi asasidiki uyghur tili bilen tvptin okhshimaydighan bolghachqa yehzish we uqush jewhette qiyinchiliq tughulishi ehniq, shunglashqa yardemchi qurallar yuqarqi bir qanche tereptin tuluqlansa bolidu:
@@ -95,7 +118,16 @@ shirkhan ehlipbesi erep yehziqi asasidiki uyghur tili bilen tvptin okhshimaydigh
 
 ## yardemchi tvrler
 
+### `khan-alphabet`
+
+[khan-alphabet](https://gitee.com/shirkhan/khan-alphabet)
+
+bv tvr `shirkhan-alphabet` ning qaxide-pirinsiplirini ishqa ashurush vchvn ishlitilidu.
+barliq muwhim iqtidarlar mushu tvr arqiliq teminlinidu.
+
 ### `shirkhan-alphabet-table`
+
+> 已弃用，功能通过 `khan-alphabet` 来提供
 
 [shirkhan-alphabet-table](https://gitee.com/silvaq/shirkhan-alphabet-table)
 bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urunlirida ohlchem birliki whasillash vchvn teyyarlanhghan bulup,`javascript` tilini asas qilidighan tvrler aldin mushu tvrni ishlitip munasiwetlik uchurlargha ehrishishi tewissiye qilinidu
@@ -113,6 +145,8 @@ qisturmining tehkhimu kohp uchuri vchvn mezkur tvr ambirini kohrvng;
 bu tvr asasliqi torkohrgvch qisturmisi bolup, torkohrgvchlerde shirkhan ehlipbeside yehzilghan mezmunlarni uyghurchigha aylandurup kohrsitish qatarliq muwhim iwhtiyajlarni qandurush vchvn ishlitilidu
 
 ### `shirkhan-retext`
+
+> 已弃用，功能通过 `khan-alphabet` 来提供
 
 [shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
 bv tvr asasliqi tehkist mezmunini uyghurche we shirkhan ehlipbesi arisida aylandurushqa ishlitilidu;
