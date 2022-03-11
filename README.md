@@ -91,7 +91,7 @@ yuqiridiki pirinsip qismida kôrsitilgen mezmunlarĝa rixaye qilĝan asasta ŝir
 >
 > ŝirħan êlipbesiniñ `V1.2.1` neŝiridin baŝlap `khan`,`khan-uz` arlaŝ yêziqĉiliq bilen ŝuĝulliniŝqa bolidu.
 >
-> ħan we ħan uz arlaŝ yêziqĉiliqi jeryanida ħan ĥeripliridin `ng` ñ ni ipadileydu, ħan uz ĥeripliride bolsa `ng=n+g` => n + g ni ipadileydu.ŝu sewebtin ħan uz da yazĝan mezmunlar asasida yeziqĉiliqni dawam qilĝanda (yeni ħan ĥeripliri bilen dawamliq mezmun qoŝqanda) mezmunniñ aħirqi netijiside ħataliq ĉiqidu.
+> ħan we ħan uz arlaŝ yêziqĉiliqi jeryanida ħan ĥeripliridin `ng` ñ ni ipadileydu, ħan uz ĥeripliride bolsa `ng=n+g` => n + g ni ipadileydu.ŝu sewebtin ħan uz da yazĝan mezmunlar asasida yêziqĉiliqni dawam qilĝanda (yeni ħan ĥeripliri bilen dawamliq mezmun qoŝqanda) mezmunniñ aħirqi netijiside ħataliq ĉiqidu.
 >
 > yuqardiki amilni kôzde tutup, arlaŝ yêziŝni iŝqa aŝuruŝ vĉvn barliq mezmunlar `khan-uz` ĝa aylanĝanda `n+g` ĥalitidiki mezmunlar `n + 0x200d +g` qilip almaŝturiliŝi, ŝundaqla mezmun `khan-uz` din baŝqa ĥaletlerge yanĝanda `n + 0x200d` diki `0x200d` alaĥide birterep qiliniŝi lazim .mesilen
 > `khan => khan-uz` diki `nhg => n 0x200d g` ĝa ôzgvreydu. tetvrsiĉe bolĝanda eĥwal qarmu-qarŝi bulidu.

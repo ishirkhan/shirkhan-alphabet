@@ -87,7 +87,7 @@ yuqiridiki pirinsip qismida kohrsitilgen mezmunlargha rixaye qilghan asasta shir
 >
 > shirkhan ehlipbesining `V1.2.1` neshiridin bashlap `khan`,`khan-uz` arlash yehziqchiliq bilen shughullinishqa bolidu.
 >
-> khan we khan uz arlash yehziqchiliqi jeryanida khan wheripliridin `ng` ng ni ipadileydu, khan uz wheripliride bolsa `ng=n+g` => n + g ni ipadileydu.shu sewebtin khan uz da yazghan mezmunlar asasida yeziqchiliqni dawam qilghanda (yeni khan wheripliri bilen dawamliq mezmun qoshqanda) mezmunning akhirqi netijiside khataliq chiqidu.
+> khan we khan uz arlash yehziqchiliqi jeryanida khan wheripliridin `ng` ng ni ipadileydu, khan uz wheripliride bolsa `ng=n+g` => n + g ni ipadileydu.shu sewebtin khan uz da yazghan mezmunlar asasida yehziqchiliqni dawam qilghanda (yeni khan wheripliri bilen dawamliq mezmun qoshqanda) mezmunning akhirqi netijiside khataliq chiqidu.
 >
 > yuqardiki amilni kohzde tutup, arlash yehzishni ishqa ashurush vchvn barliq mezmunlar `khan-uz` gha aylanghanda `n+g` whalitidiki mezmunlar `n + 0x200d +g` qilip almashturilishi, shundaqla mezmun `khan-uz` din bashqa whaletlerge yanghanda `n + 0x200d` diki `0x200d` alawhide birterep qilinishi lazim .mesilen
 > `khan => khan-uz` diki `nhg => n 0x200d g` gha ohzgvreydu. tetvrsiche bolghanda ewhwal qarmu-qarshi bulidu.
