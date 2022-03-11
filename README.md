@@ -1,4 +1,4 @@
-[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/README-ug.md)
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/shirkhan/shirkhan-alphabet/blob/master/README-ug.md)
 
 # ŝirħan êlipbesi
 
@@ -132,29 +132,29 @@ barliq muĥim iqtidarlar muŝu tvr arqiliq teminlinidu.
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-alphabet-table](https://gitee.com/silvaq/shirkhan-alphabet-table)
+[shirkhan-alphabet-table](https://gitee.com/shirkhan/shirkhan-alphabet-table)
 bv tvr ŝirħan êlipbesiniñ ĥerip jediwilini asas qilip baŝqa iŝlitiŝ urunlirida ôlĉem birliki ĥasillaŝ vĉvn teyyarlan‍ĝan bulup,`javascript` tilini asas qilidiĝan tvrler aldin muŝu tvrni iŝlitip munasiwetlik uĉurlarĝa êriŝiŝi tewissiye qilinidu
 ;
 
 ### `shirkhan-vscode`
 
-[shirkhan-vscode](https://gitee.com/silvaq/shirkhan-vscode)
+[shirkhan-vscode](https://gitee.com/shirkhan/shirkhan-vscode)
 bu tvr `vscode` kod teĥrirligvĉide ŝirħan êlipbesini iŝlitip `markdown` yêziŝni iŝqa aŝuruŝ vĉvn teminlen‍gen qisturma. `vscode` niñ qisturma baziridin `shirkhan-vscode` dep izditiŝ arqiliq qaĉilap iŝlitiŝke bulidu.
 qisturminiñ têħimu kôp uĉuri vĉvn mezkur tvr ambirini kôrvñ;
 
 ### `shirkhan-crx`
 
-[shirkhan-crx](https://gitee.com/silvaq/shirkhan-crx)
+[shirkhan-crx](https://gitee.com/shirkhan/shirkhan-crx)
 bu tvr asasliqi torkôrgvĉ qisturmisi bolup, torkôrgvĉlerde ŝirħan êlipbeside yêzilĝan mezmunlarni uyĝurĉiĝa aylandurup kôrsitiŝ qatarliq muĥim iĥtiyajlarni qanduruŝ vĉvn iŝlitilidu
 
 ### `shirkhan-retext`
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
+[shirkhan-retext](https://gitee.com/shirkhan/shirkhan-retext)
 bv tvr asasliqi têkist mezmunini uyĝurĉe we ŝirħan êlipbesi arisida aylanduruŝqa iŝlitilidu;
 
 ### `shirkhan-remark`
 
-[shirkhan-remark](https://gitee.com/silvaq/shirkhan-remark)
+[shirkhan-remark](https://gitee.com/shirkhan/shirkhan-remark)
 bv tvr asasliqi `markdown` mezmunini ŝirħan êlipbesi we uyĝurĉe arisida ôz - ara aylanduruŝ vĉvn iŝlitilidu;

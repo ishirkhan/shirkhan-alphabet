@@ -1,4 +1,4 @@
-[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/README-ug.md)
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/shirkhan/shirkhan-alphabet/blob/master/README-ug.md)
 
 # شىرخان ئېلىپبەسى
 
@@ -132,29 +132,29 @@
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-alphabet-table](https://gitee.com/silvaq/shirkhan-alphabet-table)
+[shirkhan-alphabet-table](https://gitee.com/shirkhan/shirkhan-alphabet-table)
 بۈ تۈر شىرخان ئېلىپبەسىنىڭ ھەرىپ جەدىۋىلىنى ئاساس قىلىپ باشقا ئىشلىتىش ئۇرۇنلىرىدا ئۆلچەم بىرلىكى ھاسىللاش ئۈچۈن تەييارلانغان بۇلۇپ،`javascript` تىلىنى ئاساس قىلىدىغان تۈرلەر ئالدىن مۇشۇ تۈرنى ئىشلىتىپ مۇناسىۋەتلىك ئۇچۇرلارغا ئېرىشىشى تەۋىسسىيە قىلىنىدۇ
 ؛
 
 ### `shirkhan-vscode`
 
-[shirkhan-vscode](https://gitee.com/silvaq/shirkhan-vscode)
+[shirkhan-vscode](https://gitee.com/shirkhan/shirkhan-vscode)
 بۇ تۈر `vscode` كود تەھرىرلىگۈچىدە شىرخان ئېلىپبەسىنى ئىشلىتىپ `markdown` يېزىشنى ئىشقا ئاشۇرۇش ئۈچۈن تەمىنلەنگەن قىستۇرما. `vscode` نىڭ قىستۇرما بازىرىدىن `shirkhan-vscode` دەپ ئىزدىتىش ئارقىلىق قاچىلاپ ئىشلىتىشكە بۇلىدۇ.
 قىستۇرمىنىڭ تېخىمۇ كۆپ ئۇچۇرى ئۈچۈن مەزكۇر تۈر ئامبىرىنى كۆرۈڭ؛
 
 ### `shirkhan-crx`
 
-[shirkhan-crx](https://gitee.com/silvaq/shirkhan-crx)
+[shirkhan-crx](https://gitee.com/shirkhan/shirkhan-crx)
 بۇ تۈر ئاساسلىقى توركۆرگۈچ قىستۇرمىسى بولۇپ، توركۆرگۈچلەردە شىرخان ئېلىپبەسىدە يېزىلغان مەزمۇنلارنى ئۇيغۇرچىغا ئايلاندۇرۇپ كۆرسىتىش قاتارلىق مۇھىم ئىھتىياجلارنى قاندۇرۇش ئۈچۈن ئىشلىتىلىدۇ
 
 ### `shirkhan-retext`
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
+[shirkhan-retext](https://gitee.com/shirkhan/shirkhan-retext)
 بۈ تۈر ئاساسلىقى تېكىست مەزمۇنىنى ئۇيغۇرچە ۋە شىرخان ئېلىپبەسى ئارىسىدا ئايلاندۇرۇشقا ئىشلىتىلىدۇ؛
 
 ### `shirkhan-remark`
 
-[shirkhan-remark](https://gitee.com/silvaq/shirkhan-remark)
+[shirkhan-remark](https://gitee.com/shirkhan/shirkhan-remark)
 بۈ تۈر ئاساسلىقى `markdown` مەزمۇنىنى شىرخان ئېلىپبەسى ۋە ئۇيغۇرچە ئارىسىدا ئۆز - ئارا ئايلاندۇرۇش ئۈچۈن ئىشلىتىلىدۇ؛

@@ -1,4 +1,4 @@
-[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/silvaq/shirkhan-alphabet/blob/master/README-ug.md)
+[ئۇيغۇرچە قوللانما ئۈچۈن بۇيەرنى چىكىڭ](https://gitee.com/shirkhan/shirkhan-alphabet/blob/master/README-ug.md)
 
 # shirkhan ehlipbesi
 
@@ -128,29 +128,29 @@ barliq muwhim iqtidarlar mushu tvr arqiliq teminlinidu.
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-alphabet-table](https://gitee.com/silvaq/shirkhan-alphabet-table)
+[shirkhan-alphabet-table](https://gitee.com/shirkhan/shirkhan-alphabet-table)
 bv tvr shirkhan ehlipbesining wherip jediwilini asas qilip bashqa ishlitish urunlirida ohlchem birliki whasillash vchvn teyyarlanhghan bulup,`javascript` tilini asas qilidighan tvrler aldin mushu tvrni ishlitip munasiwetlik uchurlargha ehrishishi tewissiye qilinidu
 ;
 
 ### `shirkhan-vscode`
 
-[shirkhan-vscode](https://gitee.com/silvaq/shirkhan-vscode)
+[shirkhan-vscode](https://gitee.com/shirkhan/shirkhan-vscode)
 bu tvr `vscode` kod tewhrirligvchide shirkhan ehlipbesini ishlitip `markdown` yehzishni ishqa ashurush vchvn teminlenhgen qisturma. `vscode` ning qisturma baziridin `shirkhan-vscode` dep izditish arqiliq qachilap ishlitishke bulidu.
 qisturmining tehkhimu kohp uchuri vchvn mezkur tvr ambirini kohrvng;
 
 ### `shirkhan-crx`
 
-[shirkhan-crx](https://gitee.com/silvaq/shirkhan-crx)
+[shirkhan-crx](https://gitee.com/shirkhan/shirkhan-crx)
 bu tvr asasliqi torkohrgvch qisturmisi bolup, torkohrgvchlerde shirkhan ehlipbeside yehzilghan mezmunlarni uyghurchigha aylandurup kohrsitish qatarliq muwhim iwhtiyajlarni qandurush vchvn ishlitilidu
 
 ### `shirkhan-retext`
 
 > 已弃用，功能通过 `khan-alphabet` 来提供
 
-[shirkhan-retext](https://gitee.com/silvaq/shirkhan-retext)
+[shirkhan-retext](https://gitee.com/shirkhan/shirkhan-retext)
 bv tvr asasliqi tehkist mezmunini uyghurche we shirkhan ehlipbesi arisida aylandurushqa ishlitilidu;
 
 ### `shirkhan-remark`
 
-[shirkhan-remark](https://gitee.com/silvaq/shirkhan-remark)
+[shirkhan-remark](https://gitee.com/shirkhan/shirkhan-remark)
 bv tvr asasliqi `markdown` mezmunini shirkhan ehlipbesi we uyghurche arisida ohz - ara aylandurush vchvn ishlitilidu;
